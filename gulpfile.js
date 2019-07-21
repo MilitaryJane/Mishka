@@ -8,7 +8,11 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer'); // Проставлет вендорные префиксы в CSS для поддержки старых браузеров
 var imagemin = require('gulp-imagemin'); // Сжатие изображение
 var server = require('browser-sync').create();
+var del = require('del');
 
+gulp.task('clean', function () {
+    return del.sync('dist');
+});
 
 // Копирование файлов HTML в папку dist
 gulp.task("html", function () {
