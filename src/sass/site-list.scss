@@ -1,0 +1,36 @@
+.site-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 320px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    word-break: break-all;
+
+    &__item {
+        border-bottom: 1px solid #ececec;
+
+        &-link {
+            display: block;
+            box-sizing: border-box;
+            width: 320px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 77px;
+            color: $link-color;
+
+            &:focus,
+            &:hover {
+                color: $link-focus-color;
+            }
+
+            &:active {
+                color: $link-active-color;
+            }
+        }
+
+
+    }
+}

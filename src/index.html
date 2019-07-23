@@ -4,22 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>Mishka</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
-        <a class="page-header__logo"><img class="page-header__logo-image" src="#" width="" height=""
-                alt="Логотип Mishki">
-        </a>
+        <div class="page-header__wrapper">
+            <a class="page-header__logo"><img class="page-header__logo-image" src="img/mishka-logo-mobile.png"
+                    width="86" height="35" alt="Логотип Mishki">
+            </a>
+            <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
-                        <a href="catalog.html">Каталог продуктов</a>
+                        <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="form.html">Вязание на заказ</a>
+                        <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
                     </li>
                 </ul>
                 <ul class="main-nav__list user-list">
@@ -40,7 +45,7 @@
             работы для дома
         </h1>
         <section class="assortiment"></section>
-        <h2 class="visualli-hidden">Виды продукции</h2>
+        <h2 class="visually-hidden">Виды продукции</h2>
         <ul class="assortment__list">
             <li class="assortiment__item assortiment__item--interior">
                 <a href="#">Предметы интерьера</a>
@@ -52,7 +57,7 @@
         </section>
         <section class="featured">
             <div class="featured__wrapper">
-                <h2 class="visualli-hidden">Лучшая продукция</h2>
+                <h2 class="visually-hidden">Лучшая продукция</h2>
                 <h3 class="featured__name">Вязаные корзинки</h3>
                 <b class="featured__slogan">Товар недели</b>
                 <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех

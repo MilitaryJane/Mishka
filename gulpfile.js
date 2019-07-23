@@ -51,7 +51,7 @@ gulp.task('min-css', ['sass'], function () {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('src/sass/**/*.{scss,sass}', ['sass']);
     gulp.watch('src/js/**/*.js', browserSync.reload);
-    gulp.watch('src/**/*.html', browserSync.reload);
+    gulp.watch('src/*.html', browserSync.reload);
 })
 
 gulp.task('build', ['clean', 'min-css'], function () {
@@ -61,7 +61,7 @@ gulp.task('build', ['clean', 'min-css'], function () {
         ])
         .pipe(gulp.dest('dist/css'));
 
-    var buildImage = gulp.src("src/images/*.+(jpg|jpeg|png|gif)")
+    var buildImage = gulp.src("src/img/*.+(jpg|jpeg|png|gif)")
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{

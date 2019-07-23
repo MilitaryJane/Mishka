@@ -1,0 +1,14 @@
+.main-nav {
+    display: block;
+    width: 320px;
+
+
+    font-size: 17px;
+    line-height: $base-line-height;
+    font-weight: 700;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
