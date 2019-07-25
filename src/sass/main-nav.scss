@@ -1,14 +1,45 @@
 .main-nav {
-    display: block;
-    width: 320px;
-
-
-    font-size: 17px;
-    line-height: $base-line-height;
-    font-weight: 700;
+    border-bottom: $nav-border;
 
     &__wrapper {
+        width: 173px;
+        margin-top: 22px;
+        margin-right: 0;
+        margin-bottom: 22px;
+        margin-left: 86px;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 86px;
+        height: 35px;
+
+        &:focus,
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &__toggle {
+        margin-left: 67px;
+        margin-top: 7px;
+    }
+
+    &__wrapper-menu {
+        display: none;
+        width: 100%;
+
+        font-size: 17px;
+        line-height: $base-line-height;
+        font-weight: 700;
+    }
+
+    &__wrapper-menu--open {
+        display: block;
     }
 }

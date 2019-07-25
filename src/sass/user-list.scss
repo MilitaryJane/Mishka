@@ -10,11 +10,16 @@
     word-break: break-all;
 
     &__item {
-        border-bottom: 1px solid #ececec;
+        border-bottom: $nav-border;
     }
 
-    &__seach,
+    &__item:last-child {
+        border-bottom: none;
+    }
+
+    &__search,
     &__basket {
+        position: relative;
         display: block;
         box-sizing: border-box;
         width: 320px;
@@ -33,4 +38,53 @@
         }
     }
 
+    &__search::before {
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 32px;
+
+        display: block;
+        width: 18px;
+        height: 18px;
+
+        background-image: url("../img/search.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    &__basket::before {
+        content: "";
+        position: absolute;
+        top: 31px;
+        left: 30px;
+
+        display: block;
+        width: 21px;
+        height: 18px;
+
+        background-image: url("../img/cart.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    &__search:hover::before,
+    &__search:focus::before {
+        background-image: url("../img/search-focus.png");
+    }
+
+    &__basket:hover::before,
+    &__basket:focus::before {
+        background-image: url("../img/cart-focus.png");
+    }
+
+    &__search:active::before {
+        background-image: url("../img/search-focus.png");
+        opacity: 0.3;
+    }
+
+    &__basket:active::before {
+        background-image: url("../img/cart-focus.png");
+        opacity: 0.3;
+    }
 }

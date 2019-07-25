@@ -1,0 +1,68 @@
+.toggle {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+
+    border: none;
+
+
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.toggle__burger {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #000000;
+    transition: background-color 0s 0.3s;
+
+
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+
+        width: 20px;
+        height: 2px;
+
+        background-color: #000000;
+        transition-duration: 1s, 1s;
+        transition-delay: 0.3s, 0s;
+    }
+
+    &::before {
+        top: -6px;
+    }
+
+    &::after {
+        top: 6px;
+    }
+}
+
+.toggle__burger--open {
+    background: none;
+
+    &::before,
+    &::after {
+        transform-origin: 50% 50%;
+        transition-duration: 1s, 1s;
+        transition-delay: 0.3s, 0.3s;
+    }
+
+    &::before {
+        transform: translate(0, 6px) rotate(-315deg);
+    }
+
+    &::after {
+        transform: translate(0, -6px) rotate(315deg);
+    }
+}

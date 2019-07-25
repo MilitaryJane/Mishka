@@ -10,7 +10,7 @@
     word-break: break-all;
 
     &__item {
-        border-bottom: 1px solid #ececec;
+        border-bottom: $nav-border;
 
         &-link {
             display: block;
@@ -30,7 +30,9 @@
                 color: $link-active-color;
             }
         }
+    }
 
-
+    &__item:first-child {
+        border-top: $nav-border;
     }
 }

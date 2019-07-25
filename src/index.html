@@ -11,14 +11,18 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__wrapper">
-            <a class="page-header__logo"><img class="page-header__logo-image" src="img/mishka-logo-mobile.png"
-                    width="86" height="35" alt="Логотип Mishki">
-            </a>
-            <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
         <nav class="main-nav">
-            <div class="main-nav__wrapper">
+            <div class="container">
+                <div class="main-nav__wrapper">
+                    <a class="main-nav__logo"><img class="main-nav__logo-image" src="img/mishka-logo-mobile.png"
+                            width="86" height="35" alt="Логотип Mishki">
+                    </a>
+                    <button class="main-nav__toggle toggle" type="button"><span class="toggle__burger "><span
+                                class="visually-hidden">Открыть
+                                меню</span></span></button>
+                </div>
+            </div>
+            <div class="main-nav__wrapper-menu">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
                         <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
@@ -29,7 +33,7 @@
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
-                        <a class="user-list__seach" href="#">Поиск по сайту</a>
+                        <a class="user-list__search" href="#">Поиск по сайту</a>
                     </li>
                     <li class="user-list__item">
                         <a class="user-list__basket" href="#">Корзина: <span class="user-list__basket-indicator">пока
@@ -41,111 +45,120 @@
         </nav>
     </header>
     <main class="page-main">
-        <h1 class="page-main__title">Милые штуки ручной
-            работы для дома
-        </h1>
-        <section class="assortiment"></section>
-        <h2 class="visually-hidden">Виды продукции</h2>
-        <ul class="assortment__list">
-            <li class="assortiment__item assortiment__item--interior">
-                <a href="#">Предметы интерьера</a>
-            </li>
-            <li class="assortiment__item assortiment__item--toy">
-                <a href="#">Детские игрушки</a>
-            </li>
-        </ul>
-        </section>
-        <section class="featured">
-            <div class="featured__wrapper">
-                <h2 class="visually-hidden">Лучшая продукция</h2>
-                <h3 class="featured__name">Вязаные корзинки</h3>
-                <b class="featured__slogan">Товар недели</b>
-                <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-                    размерах.
-                </p>
-                <table class="featured__list">
+        <div class="container">
+            <h1 class="visually-hidden">Мишка - магазин вязаных изделий для дома</h1>
+            <section class="assortiment">
+                <div class="assortiment__wrapper-title">
+                    <h2 class="assortiment__title">Милые штуки ручной
+                        работы&nbsp;для дома</h2>
+                </div>
+                <ul class="assortiment__list">
+                    <li class="assortiment__item ">
+                        <a class="assortiment__item-link assortiment__item-link--interior" href="#">
+                            <span class="assortiment__item-text">Предметы интерьера</span>
+                        </a>
+                    </li>
+                    <li class="assortiment__item">
+                        <a class="assortiment__item-link assortiment__item-link--toy" href="#">
+                            <span class="assortiment__item-text">Детские игрушки</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="featured">
+                <div class="featured__wrapper">
+                    <h2 class="visually-hidden">Лучшая продукция</h2>
+                    <h3 class="featured__name">Вязаные корзинки</h3>
+                    <b class="featured__slogan">Товар недели</b>
+                    <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+                        трех
+                        размерах.
+                    </p>
+                    <table class="featured__list">
+                        <tr>
+                            <td class="featured__field">Цвет:</td>
+                            <td class="featured__value">«Тиффани»/серый</td>
+                        </tr>
+                        <tr>
+                            <td class="featured__field">Диаметр:</td>
+                            <td class="featured__value">25 см</td>
+                        </tr>
+                        <tr>
+                            <td class="featured__field">Высота:</td>
+                            <td class="featured__value">15 см</td>
+                        </tr>
+                    </table>
+                    <img class="featured__image" src="" width="" height="" alt="Вязаные корзинки">
+                    <p class="featured__price">Цена: <span class="featured__price-value">990 руб.</span></p>
+                    <button class="button featured__buy-button" type="button">Купить</button>
+                </div>
+            </section>
+            <section class="about-us">
+                <h2 class="about-us__title">Коротко о нас:</h2>
+                <ul class="about-us__list">
+                    <li class="about-us__item about-us__item--eco-materials">Экологически чистые материалы</li>
+                    <li class="about-us__item about-us__item--Scandinavian-style">Скандинавский стиль по
+                        российской цене</li>
+                    <li class="about-us__item about-us__item--more-likes">Увеличивает лайки
+                        на фотографиях</li>
+                    <li class="about-us__item about-us__item--made-with-love">Связано вручную с
+                        любовью и умилением</li>
+                    <li class="about-us__item about-us__item--domestic-manufacturer">Поддержка отечественного
+                        производителя
+                    </li>
+                    <li class="about-us__item about-us__item--gift-wrap">Поставляется в
+                        подарочной упаковке</li>
+                </ul>
+            </section>
+            <section class="reviews">
+                <div class="reviews__wrapper slider">
+                    <h2 class="reviews__title">Отзывы</h2>
+                    <div class="reviews__list slider__list">
+                        <blockquote class="reviews__item slider__item">
+                            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
+                                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
+                                игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+                                лайков!
+                            </p>
+                            <cite class="reviews__author-name">Анастасия Красильникова
+                                <span class="reviews__author-login">@misssssiskras</span>
+                            </cite>
+                        </blockquote>
+                    </div>
+                    <p class="reviews__toggles slider__toggles">
+                        <button class="slider__toggle" type="button">Предыдущий</button>
+                        <button class="slider__toggle" type="button">Следующий</button>
+                    </p>
+                    <button class="button reviews__button" type="button">Написать</button>
+                </div>
+            </section>
+            <section class="contacts">
+                <h2 class="contacts__title">Контакты</h2>
+                <table class="contacts__list">
                     <tr>
-                        <td class="featured__field">Цвет:</td>
-                        <td class="featured__value">«Тиффани»/серый</td>
+                        <td class="contacts__field">e-mail:</td>
+                        <td class="contacts__value">
+                            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="featured__field">Диаметр:</td>
-                        <td class="featured__value">25 см</td>
-                    </tr>
-                    <tr>
-                        <td class="featured__field">Высота:</td>
-                        <td class="featured__value">15 см</td>
+                        <td class="contacts__field">адрес:</td>
+                        <td class="contacts__value">
+                            г. Санкт-Петербург,<br>
+                            ул. Большая Конюшенная,<br>
+                            д. 19/8, офис 101
+                        </td>
                     </tr>
                 </table>
-                <img class="featured__image" src="" width="" height="" alt="Вязаные корзинки">
-                <p class="featured__price">Цена: <span class="featured__price-value">990 руб.</span></p>
-                <button class="button featured__buy-button" type="button">Купить</button>
-            </div>
-        </section>
-        <section class="about-us">
-            <h2 class="about-us__title">Коротко о нас:</h2>
-            <ul class="about-us__list">
-                <li class="about-us__item about-us__item--eco-materials">Экологически чистые материалы</li>
-                <li class="about-us__item about-us__item--Scandinavian-style">Скандинавский стиль по
-                    российской цене</li>
-                <li class="about-us__item about-us__item--more-likes">Увеличивает лайки
-                    на фотографиях</li>
-                <li class="about-us__item about-us__item--made-with-love">Связано вручную с
-                    любовью и умилением</li>
-                <li class="about-us__item about-us__item--domestic-manufacturer">Поддержка отечественного производителя
-                </li>
-                <li class="about-us__item about-us__item--gift-wrap">Поставляется в
-                    подарочной упаковке</li>
-            </ul>
-        </section>
-        <section class="reviews">
-            <div class="reviews__wrapper slider">
-                <h2 class="reviews__title">Отзывы</h2>
-                <div class="reviews__list slider__list">
-                    <blockquote class="reviews__item slider__item">
-                        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-                            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
-                            игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
-                            лайков!
-                        </p>
-                        <cite class="reviews__author-name">Анастасия Красильникова
-                            <span class="reviews__author-login">@misssssiskras</span>
-                        </cite>
-                    </blockquote>
-                </div>
-                <p class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle" type="button">Предыдущий</button>
-                    <button class="slider__toggle" type="button">Следующий</button>
-                </p>
-                <button class="button reviews__button" type="button">Написать</button>
-            </div>
-        </section>
-        <section class="contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <table class="contacts__list">
-                <tr>
-                    <td class="contacts__field">e-mail:</td>
-                    <td class="contacts__value">
-                        <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="contacts__field">адрес:</td>
-                    <td class="contacts__value">
-                        г. Санкт-Петербург,<br>
-                        ул. Большая Конюшенная,<br>
-                        д. 19/8, офис 101
-                    </td>
-                </tr>
-            </table>
-            <div class="contacts__map">
-                <img class="contacts__map-image" src="" width="" height="" alt="Офис компании по адресу г. Санкт-Петербург,
+                <div class="contacts__map">
+                    <img class="contacts__map-image" src="" width="" height="" alt="Офис компании по адресу г. Санкт-Петербург,
                 ул. Большая Конюшенная, д. 19/8, офис 101">
-            </div>
-            <button class="button contacts__button" type="button">Напишите нам</button>
-        </section>
+                </div>
+                <button class="button contacts__button" type="button">Напишите нам</button>
+            </section>
+        </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
         <div class="page-footer__social social">
             <ul class="social__list">
                 <li class="social__item">
@@ -185,7 +198,30 @@
     </section>
 
 
+    <script>
+        (function () {
 
+            "use strict";
+
+            var toggle = document.querySelector(".toggle");
+            var toggleBurger = document.querySelector(".toggle__burger");
+            var modalMenu = document.querySelector(".main-nav__wrapper-menu");
+
+            toggle.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                (toggleBurger.classList.contains("toggle__burger--open") === true) ? toggleBurger.classList
+                    .remove(
+                        "toggle__burger--open"): toggleBurger.classList.add("toggle__burger--open");
+                (modalMenu.classList.contains("main-nav__wrapper-menu--open") === true) ? modalMenu
+                    .classList
+                    .remove(
+                        "main-nav__wrapper-menu--open"): modalMenu.classList.add(
+                        "main-nav__wrapper-menu--open");
+
+            });
+
+        })();
+    </script>
 
 </body>
 
