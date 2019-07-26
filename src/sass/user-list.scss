@@ -1,3 +1,5 @@
+@import "_style-lib.scss";
+
 .user-list {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +12,7 @@
     word-break: break-all;
 
     &__item {
-        border-bottom: $nav-border;
+        border-bottom: $base-border;
     }
 
     &__item:last-child {
@@ -39,12 +41,10 @@
     }
 
     &__search::before {
-        content: "";
-        position: absolute;
+        @include pseudo-element;
         top: 32px;
         left: 32px;
 
-        display: block;
         width: 18px;
         height: 18px;
 
@@ -54,12 +54,10 @@
     }
 
     &__basket::before {
-        content: "";
-        position: absolute;
+        @include pseudo-element;
         top: 31px;
         left: 30px;
 
-        display: block;
         width: 21px;
         height: 18px;
 

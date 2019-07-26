@@ -1,3 +1,5 @@
+@import "_style-lib.scss";
+
 .assortiment {
     &__wrapper-title {
         display: block;
@@ -7,12 +9,10 @@
         margin: 0 -30px;
         padding-top: 71px;
 
-
         background-image: url("../img/hero-mobile.jpg");
         background-position: 0 -18px;
         background-repeat: no-repeat;
     }
-
 
     &__title {
         display: block;
@@ -58,12 +58,11 @@
         }
 
         &--interior::after {
-            content: "";
-            position: absolute;
+            @include pseudo-element;
+
             top: 23px;
             right: 36px;
 
-            display: block;
             width: 40px;
             height: 62px;
 
@@ -77,12 +76,11 @@
         }
 
         &--toy::after {
-            content: "";
-            position: absolute;
+            @include pseudo-element;
+
             top: 21px;
             right: 27px;
 
-            display: block;
             width: 60px;
             height: 60px;
 
@@ -94,7 +92,7 @@
 
     // &__item-link:hover,
     // &__item-link:focus {
-    //     padding-bottom: 35px;
+    //     padding-top: 35px;
     // }
 
     &__item-text {

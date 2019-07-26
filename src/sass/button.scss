@@ -1,0 +1,32 @@
+@import "_style-lib.scss";
+
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: 260px;
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $base-batton-color;
+
+    background-color: $base-batton-bg-color;
+    border: $base-batton-border;
+
+    &:hover,
+    &:focus {
+        color: $base-batton-focus-color;
+        background-color: $base-batton-bg-focus-color;
+    }
+
+    &:active {
+        color: $base-batton-active-color;
+        background-color: $base-batton-bg-active-color;
+    }
+}

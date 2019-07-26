@@ -1,0 +1,16 @@
+@import "_style-lib.scss";
+
+.index-section-title {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+
+    font-size: $section-title-font-size;
+    line-height: $section-title-line-height;
+    font-weight: $section-title-font-weight;
+
+    width: 260px;
+}

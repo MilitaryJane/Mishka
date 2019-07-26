@@ -1,5 +1,7 @@
+@import "_style-lib.scss";
+
 .main-nav {
-    border-bottom: $nav-border;
+    border-bottom: $base-border;
 
     &__wrapper {
         width: 173px;

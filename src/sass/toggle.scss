@@ -1,3 +1,5 @@
+@import "_style-lib.scss";
+
 .toggle {
     padding: 0;
     width: 20px;
@@ -26,9 +28,8 @@
 
     &::before,
     &::after {
-        content: "";
+        @include pseudo-element;
 
-        position: absolute;
         left: 0;
 
         width: 20px;
