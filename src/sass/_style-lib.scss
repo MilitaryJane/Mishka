@@ -19,7 +19,6 @@ $section-title-line-height: 30px;
 $section-title-font-weight: 700;
 
 
-
 @mixin pseudo-element ($content: "", $display:block, $pos:absolute) {
     content: $content;
     display: $display;

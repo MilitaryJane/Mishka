@@ -127,8 +127,12 @@
                         </blockquote>
                     </div>
                     <p class="reviews__toggles slider__toggles">
-                        <button class="slider__toggle" type="button">Предыдущий</button>
-                        <button class="slider__toggle" type="button">Следующий</button>
+                        <button class="reviews__toggles-previous slider__toggle" type="button"><span
+                                class="reviews__text-previous"><span
+                                    class="visually-hidden">Предыдущий</span></span></button>
+                        <button class="reviews__toggles-next slider__toggle" type="button"><span
+                                class="reviews__text-next"><span
+                                    class="visually-hidden">Следующий</span></span></button>
                     </p>
                     <button class="button reviews__button" type="button">Написать</button>
                 </div>
@@ -146,57 +150,72 @@
                         <td class="contacts__field">адрес:</td>
                         <td class="contacts__value">
                             г. Санкт-Петербург,<br>
-                            ул. Большая Конюшенная,<br>
+                            ул.&nbsp;Большая&nbsp;Конюшенная,<br>
                             д. 19/8, офис 101
                         </td>
                     </tr>
                 </table>
                 <div class="contacts__map">
-                    <img class="contacts__map-image" src="" width="" height="" alt="Офис компании по адресу г. Санкт-Петербург,
+                    <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Офис компании по адресу г. Санкт-Петербург,
                 ул. Большая Конюшенная, д. 19/8, офис 101">
                 </div>
                 <button class="button contacts__button" type="button">Напишите нам</button>
             </section>
         </div>
     </main>
-    <footer class="page-footer container">
-        <div class="page-footer__social social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link social__link--in" href="#">Мы в Инстаграме</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--tw" href="#">Мы в Твиттере</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="button copyright__link" href="#">HTML Academy</a>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer__social social">
+                <ul class="social__list">
+
+                    <li class="social__item">
+                        <a class="social__link social__link--in" href="#"><span class="visually-hidden">Мы в
+                                Инстаграме</span></a>
+                    </li>
+
+                    <li class="social__item">
+                        <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Мы в
+                                Фейсбуке</span></a>
+                    </li>
+
+                    <li class="social__item">
+                        <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Мы в
+                                Твиттере</span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <div class="copyright__wrapper">
+                    <b class="copyright__text">Разработано</b>
+                    <a class="copyright__link" href="#"><span class="visually-hidden">HTML Academy</span></a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <section class="modal modal-add-basket">
-        <div class="modal-add-basket__wrapper">
-            <h2 class="modal-add-basket__title">Добавить в корзину</h2>
-            <span class="modal-add-basket__text">Выберите размер:</span>
-            <ul class="modal-add-basket__list">
-                <li class="modal-add-basket__item">
-                    <button class="modal-add-basket__button-size modal-add-to-basket__button-size--active">S</button>
-                </li>
-                <li class="modal-add-basket__item">
-                    <button class="modal-add-basket__button-size">M</button>
-                </li>
-                <li class="modal-add-basket__item">
-                    <button class="modal-add-basket__button-size">L</button>
-                </li>
-            </ul>
-            <button class="button modal-add-basket__button" type="button">Добавить</button>
+        <div class="container">
+            <div class="modal-add-basket__wrapper">
+                <h2 class="modal-add-basket__title index-section-title">Добавить в&nbsp;корзину</h2>
+                <span class="modal-add-basket__text">Выберите размер:</span>
+                <ul class="modal-add-basket__list">
+                    <li class="modal-add-basket__item">
+                        <button
+                            class="modal-add-basket__button-size modal-add-to-basket__button-size--active">S</button>
+                    </li>
+                    <li class="modal-add-basket__item">
+                        <button class="modal-add-basket__button-size">M</button>
+                    </li>
+                    <li class="modal-add-basket__item">
+                        <button class="modal-add-basket__button-size">L</button>
+                    </li>
+                </ul>
+                <button class="button modal-add-basket__button" type="button">Добавить</button>
+            </div>
         </div>
     </section>
+    <div class="overlay"></div>
 
 
     <script>

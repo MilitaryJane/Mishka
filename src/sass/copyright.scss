@@ -1,0 +1,46 @@
+.copyright {
+    display: block;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        padding: 0;
+        margin: 0 auto;
+
+        width: 183px;
+    }
+
+    &__text {
+        display: block;
+        width: 130px;
+        padding: 5px 0 8px 0;
+
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    &__link {
+        display: block;
+
+        width: 27px;
+        height: 34px;
+
+        background-image: url("../img/htmlacademy.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+        &:focus,
+        &:hover {
+            background-image: url("../img/htmlacademy-focus.png");
+        }
+
+        &:active {
+            background-image: url("../img/htmlacademy-focus.png");
+            opacity: 0.3;
+        }
+    }
+
+}

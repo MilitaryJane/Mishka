@@ -1,0 +1,150 @@
+@import "_style-lib.scss";
+
+.reviews {
+    display: block;
+    padding: 30px 0 45px 0;
+    margin: 0;
+    @include border-image;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 67px;
+        padding: 0;
+
+        text-align: left;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #444444;
+    }
+
+    &__author-name {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        text-align: left;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    &__author-login {
+        display: block;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding: 0;
+
+        text-align: left;
+        font-style: normal;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #444444;
+    }
+
+    &__toggles {
+        display: block;
+        margin: 0;
+        margin-bottom: 35px;
+        padding: 0;
+        width: 260px;
+
+
+    }
+
+    &__toggles-previous,
+    &__toggles-next {
+        position: relative;
+        width: 130px;
+        min-height: 52px;
+        box-sizing: border-box;
+        border: $base-border;
+        background-color: $base-batton-bg-color;
+        cursor: pointer;
+    }
+
+    &__toggles-previous {
+        border-right: none;
+    }
+
+    &__toggles-previous::before,
+    &__toggles-next::before {
+        @include pseudo-element;
+        top: 24px;
+        width: 49px;
+        height: 4px;
+        background-color: #000000;
+    }
+
+    &__toggles-previous::before {
+        left: 38px;
+    }
+
+    &__toggles-next::before {
+        left: 42px;
+    }
+
+    &__text-previous::before,
+    &__text-previous::after,
+    &__text-next::before,
+    &__text-next::after {
+        @include pseudo-element;
+        width: 18px;
+        height: 3px;
+        background-color: #000000;
+    }
+
+    &__text-previous::before {
+        top: 19px;
+        left: 33px;
+        transform: rotate(-45deg);
+    }
+
+    &__text-previous::after {
+        top: 30px;
+        left: 33px;
+        transform: rotate(45deg);
+    }
+
+    &__text-next::before {
+        top: 19px;
+        right: 33px;
+        transform: rotate(45deg);
+    }
+
+    &__text-next::after {
+        top: 30px;
+        right: 33px;
+        transform: rotate(-45deg);
+    }
+
+    &__toggles-previous:focus,
+    &__toggles-previous:hover,
+    &__toggles-next:focus,
+    &__toggles-next:hover {
+        opacity: 0.6;
+    }
+
+    &__toggles-previous:active,
+    &__toggles-next:active {
+        opacity: 0.3;
+    }
+}

@@ -1,0 +1,95 @@
+@import "_style-lib.scss";
+
+.social {
+    display: block;
+
+    border-bottom: 1px solid #e5e5ee;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 142px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+
+        width: 25px;
+        height: 28px;
+
+        &::before {
+            @include pseudo-element;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+
+        &--in::before {
+            width: 22px;
+            height: 21px;
+
+            top: 5px;
+            left: 0;
+
+            background-image: url("../img/insta.png");
+        }
+
+        &--fb::before {
+            width: 15px;
+            height: 28px;
+
+            top: 0;
+            left: 5px;
+
+            background-image: url("../img/fb.png");
+        }
+
+
+        &--tw::before {
+            width: 23px;
+            height: 20px;
+
+            top: 5px;
+            right: 0;
+
+            background-image: url("../img/twitter.png");
+        }
+
+        &--in:focus::before,
+        &--in:hover::before {
+            background-image: url("../img/insta-focus.png");
+        }
+
+        &--fb:focus::before,
+        &--fb:hover::before {
+            background-image: url("../img/fb-focus.png");
+        }
+
+        &--tw:focus::before,
+        &--tw:hover::before {
+            background-image: url("../img/twitter-focus.png");
+        }
+
+        &--in:active::before {
+            background-image: url("../img/insta-focus.png");
+            opacity: 0.3;
+        }
+
+        &--fb:active::before {
+            background-image: url("../img/fb-focus.png");
+            opacity: 0.3;
+        }
+
+        &--tw:active::before {
+            background-image: url("../img/twitter-focus.png");
+            opacity: 0.3;
+        }
+
+    }
+
+
+}

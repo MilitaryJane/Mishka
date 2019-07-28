@@ -1,0 +1,19 @@
+.page-footer {
+    display: flex;
+    width: 260;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f1f1f1;
+
+    &__social {
+        padding: 26px 0;
+        margin: 0;
+    }
+
+    &__copyright {
+        padding: 22px 0 23px 0;
+        margin: 0;
+    }
+}
