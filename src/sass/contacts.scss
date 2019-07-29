@@ -1,3 +1,5 @@
+@import "_style-lib.scss";
+
 .contacts {
     display: block;
     margin: 0;
@@ -27,7 +29,7 @@
         line-height: 30px;
         font-weight: 400;
 
-        color: #444444;
+        color: $companion-font-color;
     }
 
     &__field {
@@ -47,7 +49,7 @@
 
     &__email {
         position: relative;
-        color: #444444;
+        color: $companion-font-color;
 
         &:focus,
         &:hover {

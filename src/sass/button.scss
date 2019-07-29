@@ -29,4 +29,23 @@
         color: $base-batton-active-color;
         background-color: $base-batton-bg-active-color;
     }
+
+    &--add-basket {
+        color: $bt-add-basket-font-color;
+        background-color: $bt-add-basket-bg-color;
+        border: $bt-add-basket-border;
+
+        &:focus,
+        &:hover {
+            color: $bt-add-basket-focus-font-color;
+            background-color: $bt-add-basket-focus-bg-color;
+            border: $bt-add-basket-focus-border;
+        }
+
+        &:active {
+            color: $bt-add-basket-active-font-color;
+            background-color: $bt-add-basket-active-bg-color;
+            border: $bt-add-basket-active-border;
+        }
+    }
 }

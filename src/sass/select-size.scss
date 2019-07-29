@@ -1,0 +1,31 @@
+@import "_style-lib.scss";
+
+.size-select {
+    display: block;
+    width: 78px;
+    margin: 0;
+    padding: 15px 0;
+
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    color: $companion-font-color;
+
+
+    background-color: $size-select-bg-color;
+    border: $size-select-border;
+
+    &:hover,
+    &:focus {
+        border: $size-select-focus-border;
+    }
+
+    &:active {
+        border: $size-select-active-border;
+    }
+
+    &--active {
+        border: $size-select-active-border;
+    }
+
+}
