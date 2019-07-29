@@ -30,7 +30,7 @@ $size-select-active-border: 2px solid #62d1ba;
 $bt-add-basket-bg-color: #63d1bb;
 $bt-add-basket-font-color: #ffffff;
 $bt-add-basket-border: 2px solid #63d1bb;
-;
+
 $bt-add-basket-focus-bg-color: #ffffff;
 $bt-add-basket-focus-font-color: #63d1bb;
 $bt-add-basket-focus-border: 2px solid #63d1bb;
@@ -38,7 +38,7 @@ $bt-add-basket-active-bg-color: #ffffff;
 $bt-add-basket-active-font-color: #7c7c7c;
 $bt-add-basket-active-border: 2px solid #7c7c7c;
 
-
+$overlay-bg-color: rgba(255, 255, 250, 0.8);
 
 @mixin pseudo-element ($content: "", $display:block, $pos:absolute) {
     content: $content;
