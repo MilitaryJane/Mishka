@@ -1,0 +1,95 @@
+@import "_style-lib.scss";
+
+.video {
+    display: block;
+    padding: 0;
+    padding-bottom: 32px;
+    margin: 0;
+    border: $catalog-border;
+
+    &__title {
+        position: relative;
+        display: block;
+        padding: 24px 0 24px 90px;
+        margin: 0;
+
+        font-size: $catalog-item-font-size;
+        line-height: $catalog-item-line-height;
+        font-weight: $catalog-item-font-weight;
+        color: $base-font-color;
+
+        &::before {
+            @include pseudo-element;
+            width: 32px;
+            height: 22px;
+
+            top: 34px;
+            left: 33px;
+
+            background-image: url("../img/video.png");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__content-wrapper {
+        display: block;
+        width: 260px;
+        height: 150px;
+        position: relative;
+
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: block;
+        width: 260px;
+        height: 150px;
+    }
+
+    &__play-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        background-color: transparent;
+
+        width: 121px;
+        height: 92px;
+
+        margin-left: -60px;
+        margin-top: -46px;
+        border: none;
+
+        background-image: url("../img/play.png");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        &:focus,
+        &:hover {
+            background-image: url("../img/play-focus.png");
+        }
+
+        &:active {
+            background-image: url("../img/play-active.png");
+        }
+    }
+
+    &__text {
+        display: block;
+        margin: 0;
+        margin-bottom: 47px;
+        padding: 0;
+        padding-left: 34px;
+
+        width: 194px;
+
+        font-size: 13px;
+        line-height: $base-line-height;
+        font-weight: 400;
+        color: $companion-font-color;
+
+
+    }
+}

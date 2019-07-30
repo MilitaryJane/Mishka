@@ -34,7 +34,8 @@
 
     &__wrapper-menu {
         display: none;
-        width: 100%;
+        width: 320px;
+        margin: 0 auto;
 
         font-size: 17px;
         line-height: $base-line-height;

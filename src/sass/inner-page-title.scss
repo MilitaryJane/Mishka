@@ -1,0 +1,17 @@
+@import "_style-lib.scss";
+
+.inner-page-title {
+    display: block;
+    box-sizing: border-box;
+    padding: 70px 0;
+    width: 320px;
+    min-height: 176px;
+
+    text-align: center;
+    font-size: $inner-page-title-font-size;
+    line-height: $inner-page-title-line-height;
+    font-weight: $inner-page-title-font-weight;
+    color: $inner-page-title-color;
+
+    background-color: $inner-page-title-bg-color;
+}

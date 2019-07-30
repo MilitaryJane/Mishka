@@ -7,7 +7,7 @@
     padding: 0;
     padding-top: 18px;
     padding-bottom: 16px;
-    margin: 0;
+    margin: 0 auto;
 
     font-size: 17px;
     line-height: 20px;
@@ -47,5 +47,9 @@
             background-color: $bt-add-basket-active-bg-color;
             border: $bt-add-basket-active-border;
         }
+    }
+
+    &--order-link {
+        width: 192px;
     }
 }
