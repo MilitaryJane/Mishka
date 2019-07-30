@@ -1,6 +1,7 @@
 @import "_style-lib.scss";
 
 .modal-add-basket {
+    display: none;
     display: block;
     min-width: 320px;
 
@@ -26,6 +27,10 @@
         padding: 0;
 
         text-transform: uppercase;
+    }
+
+    &__form-field {
+        border: none;
     }
 
     &__text {
@@ -54,4 +59,13 @@
         list-style: none;
     }
 
+    &__input:checked+.size-select {
+        border: $size-select-active-border;
+    }
+
+
+}
+
+.modal-add-basket--open {
+    display: block;
 }

@@ -198,19 +198,33 @@
         <div class="container">
             <div class="modal-add-basket__wrapper">
                 <h2 class="modal-add-basket__title index-section-title">Добавить в&nbsp;корзину</h2>
-                <span class="modal-add-basket__text">Выберите размер:</span>
-                <ul class="modal-add-basket__list">
-                    <li class="modal-add-basket__item">
-                        <button class="modal-add-basket__size-select size-select size-select--active">S</button>
-                    </li>
-                    <li class="modal-add-basket__item">
-                        <button class="modal-add-basket__size-select size-select">M</button>
-                    </li>
-                    <li class="modal-add-basket__item">
-                        <button class="modal-add-basket__size-select size-select">L</button>
-                    </li>
-                </ul>
-                <button class="modal-add-basket__button button button--add-basket" type="button">Добавить</button>
+                <form class="modal-add-basket__form">
+                    <fieldset class="modal-add-basket__form-field">
+                        <legend class="modal-add-basket__text">Выберите размер:</legend>
+                        <ul class="modal-add-basket__list">
+                            <li class="modal-add-basket__item">
+                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--small"
+                                    type="checkbox" id="small" name="small" value="small" checked>
+                                <label class="modal-add-basket__size-select size-select" for="small"
+                                    tabindex="0">S</label>
+                            </li>
+                            <li class="modal-add-basket__item">
+                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--middle"
+                                    type="checkbox" id="middle" name="middle" value="middle">
+                                <label class="modal-add-basket__size-select size-select" for="middle"
+                                    tabindex="0">M</label>
+                            </li>
+                            <li class="modal-add-basket__item">
+                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--large"
+                                    type="checkbox" id="large" name="large" value="large">
+                                <label class="modal-add-basket__size-select size-select" for="large"
+                                    tabindex="0">L</label>
+                            </li>
+                        </ul>
+                        <button class="modal-add-basket__button button button--add-basket"
+                            type="button">Добавить</button>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </section>
