@@ -1,6 +1,7 @@
 $base-font-color: #000000;
 $companion-font-color: #444444;
 $base-bg-color: #ffffff;
+$companion-color: #62d1ba;
 $base-line-height: 24px;
 $main-nav-font-size: 17px;
 
@@ -37,6 +38,35 @@ $bt-add-basket-focus-border: 2px solid #63d1bb;
 $bt-add-basket-active-bg-color: #ffffff;
 $bt-add-basket-active-font-color: #7c7c7c;
 $bt-add-basket-active-border: 2px solid #7c7c7c;
+
+$inner-page-title-bg-color: #f1f1f1;
+$inner-page-title-color: #231f20;
+$inner-page-title-font-size: 27px;
+$inner-page-title-line-height: 30px;
+$inner-page-title-font-weight: 700;
+
+$catalog-border: 1px solid #ededed;
+
+$catalog-item-font-size: 17px;
+$catalog-item-line-height: 24px;
+$catalog-item-font-weight: 700;
+
+$catalog-item-text-font-size: 13px;
+$catalog-item-text-line-height: 30px;
+$catalog-item-text-font-weight: 400;
+
+
+$check-radio-border: 2px solid #444444;
+$check-radio-focus-border:2px solid #62d1ba;
+$check-radio-active-border:2px solid #c7c7c7;
+$radio-pin-color: #62d1ba;
+$check-pin-color: #231f20;
+
+$input-border: 1px solid #000000;
+$input-border-focus: 1px solid #62d1ba;
+$input-text-color: #444444;
+$input-placeholder-color: #c7c7c7;
+
 
 $overlay-bg-color: rgba(255, 255, 250, 0.8);
 
