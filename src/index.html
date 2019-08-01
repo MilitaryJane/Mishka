@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
@@ -42,6 +43,15 @@
                     </li>
                 </ul>
             </div>
+            <ul class="main-nav__list promotion-list">
+                <li class="promotion-list__item">
+                    <a class="promotion-list__new-product" href="#">Новые поступления</a>
+                </li>
+                <li class="promotion-list__item">
+                    <a class="promotion-list__sale" href="#">Распродажа</a>
+                </li>
+            </ul>
+            <div class="main-nav__text">Бесплатная доставка по России</div>
         </nav>
     </header>
     <main class="page-main">
@@ -74,24 +84,24 @@
                             трех
                             размерах.
                         </p>
-                        <table class="week-product__list">
-                            <tr class="week-product__row">
-                                <td class="week-product__field">Цвет:</td>
-                                <td class="week-product__value">«Тиффани»/серый</td>
-                            </tr>
-                            <tr class="week-product__row">
-                                <td class="week-product__field">Диаметр:</td>
-                                <td class="week-product__value">25 см</td>
-                            </tr>
-                            <tr class="week-product__row">
-                                <td class="week-product__field">Высота:</td>
-                                <td class="week-product__value">15 см</td>
-                            </tr>
-                        </table>
+                        <ul class="week-product__list">
+                            <li class="week-product__row">
+                                <div class="week-product__field">Цвет:</div>
+                                <div class="week-product__value">«Тиффани»/серый</div>
+                            </li>
+                            <li class="week-product__row">
+                                <div class="week-product__field">Диаметр:</div>
+                                <div class="week-product__value">25 см</div>
+                            </li>
+                            <li class="week-product__row">
+                                <div class="week-product__field">Высота:</div>
+                                <div class="week-product__value">15 см</div>
+                            </li>
+                        </ul>
                         <img class="week-product__image" src="img/triple-set-mobile.jpg" width="260" height="315"
                             alt="Вязаные корзинки">
                         <p class="week-product__price">Цена: <span class="week-product__price-value">990 руб.</span></p>
-                        <button class="button week-product__buy-button" type="button">Купить</button>
+                        <button class="button week-product__buy-button" type="button">Заказать</button>
                 </div>
             </section>
             <section class="about-us">
@@ -139,22 +149,22 @@
             </section>
             <section class="contacts">
                 <h2 class="contacts__title">Контакты</h2>
-                <table class="contacts__list">
-                    <tr>
-                        <td class="contacts__field">e-mail:</td>
-                        <td class="contacts__value">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <div class="contacts__field">e-mail:</div>
+                        <div class="contacts__value">
                             <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="contacts__field">адрес:</td>
-                        <td class="contacts__value">
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contacts__field">адрес:</div>
+                        <div class="contacts__value">
                             г. Санкт-Петербург,<br>
-                            ул.&nbsp;Большая&nbsp;Конюшенная,<br>
+                            ул.&nbsp;Большая Конюшенная,<br>
                             д. 19/8, офис 101
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </li>
+                </ul>
                 <div class="contacts__map">
                     <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Офис компании по адресу г. Санкт-Петербург,
                 ул. Большая Конюшенная, д. 19/8, офис 101">

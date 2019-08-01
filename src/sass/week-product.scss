@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     display: block;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 36px;
 
     @include border-image;
@@ -17,7 +17,7 @@
         display: block;
         padding: 0;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
         text-align: left;
 
         font-size: 17px;
@@ -33,7 +33,7 @@
         display: block;
         padding: 0;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
         text-align: left;
 
         font-size: 15px;
@@ -46,7 +46,9 @@
     &__list {
         padding: 0;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+
+        list-style: none;
         text-align: left;
 
         font-size: 15px;
@@ -57,9 +59,10 @@
     }
 
     &__row {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         box-sizing: border-box;
-        padding: 12px 0;
+        padding: 10px 0;
         border-bottom: $base-border;
     }
 
@@ -74,13 +77,13 @@
     &__image {
         width: 260px;
         height: 315px;
-        margin-bottom: 28px;
+        margin-bottom: 23px;
     }
 
     &__price {
         padding: 0;
         margin: 0 auto;
-        margin-bottom: 28px;
+        margin-bottom: 27px;
         text-align: center;
 
         font-size: 17px;

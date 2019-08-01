@@ -1,6 +1,7 @@
 @import "_style-lib.scss";
 
 .main-nav {
+    width: 320px;
     border-bottom: $base-border;
 
     &__wrapper {
@@ -44,5 +45,12 @@
 
     &__wrapper-menu--open {
         display: block;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: $base-line-height;
+        font-weight: 400;
+        display: none;
     }
 }

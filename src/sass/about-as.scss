@@ -2,7 +2,7 @@
 
 .about-us {
     display: block;
-    padding: 30px 0;
+    padding: 28px 0 0 0;
     margin: 0;
 
     &__title {
@@ -20,7 +20,7 @@
         position: relative;
         display: block;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
         padding: 0;
         padding-top: 55px;
         width: 260px;
@@ -48,6 +48,7 @@
         &--Scandinavian-style::before {
             width: 47px;
             height: 27px;
+            top: 2px;
             left: 0;
 
             background-image: url("../img/icon-2.png");
@@ -56,7 +57,9 @@
         &--more-likes::before {
             width: 34px;
             height: 27px;
+            top: 6px;
             left: 7px;
+
 
             background-image: url("../img/icon-3.png");
         }
@@ -64,7 +67,7 @@
         &--made-with-love::before {
             width: 35px;
             height: 34px;
-            top: 5px;
+            top: 3px;
             left: 3px;
 
             background-image: url("../img/icon-4.png");
@@ -82,6 +85,7 @@
         &--gift-wrap::before {
             width: 33px;
             height: 32px;
+            top: 2px;
             left: 3px;
 
             background-image: url("../img/icon-6.png");
