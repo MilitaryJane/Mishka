@@ -1,17 +1,24 @@
 @import "_style-lib.scss";
 
 .user-list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     width: 320px;
     margin: 0;
+    margin-left: -30px;
     padding: 0;
 
     list-style: none;
     word-break: break-all;
 
+    font-size: 17px;
+    line-height: $base-line-height;
+    font-weight: 700;
+
     &__item {
+        box-sizing: border-box;
         border-bottom: $base-border;
     }
 
@@ -39,6 +46,8 @@
             color: $link-active-color;
         }
     }
+
+
 
     &__search::before {
         @include pseudo-element;
@@ -84,5 +93,52 @@
     &__basket:active::before {
         background-image: url("../img/cart-focus.png");
         opacity: 0.3;
+    }
+}
+
+.user-list--open {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+    .user-list {
+        display: flex;
+        order: 1;
+
+        width: 348px;
+        margin: 0;
+
+        &__item {
+            border-bottom: none;
+            border-left: $base-border;
+
+        }
+
+
+        &__search {
+            width: 81px;
+            padding-top: 44px;
+            padding-bottom: 44px;
+            padding-left: 0;
+
+
+        }
+
+        &__search-text {
+            display: none;
+        }
+
+        &__basket {
+            width: 265px;
+
+            padding-left: 82px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .user-list {
+        order: 2;
     }
 }

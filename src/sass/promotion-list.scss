@@ -1,3 +1,61 @@
+@import "_style-lib.scss";
+
 .promotion-list {
     display: none;
+
+}
+
+
+@media (min-width: 1250px) {
+    .promotion-list {
+        position: absolute;
+        top: 105px;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 350px;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+
+
+
+        &__new-product,
+        &__sale {
+            display: block;
+            padding: 0;
+
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $link-color;
+
+        }
+
+        &__new-product {
+            width: 175px;
+            margin-right: 45px;
+        }
+
+        &__sale {
+            width: 130px;
+        }
+
+
+        &__new-product:hover,
+        &__new-product:focus,
+        &__sale:hover,
+        &__sale:focus {
+            color: $link-focus-color;
+
+        }
+
+        &__new-product:active,
+        &__sale:active {
+            color: $link-active-color;
+        }
+    }
 }

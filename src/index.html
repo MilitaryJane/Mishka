@@ -12,29 +12,37 @@
 
 <body class="page">
     <header class="page-header">
-        <nav class="main-nav">
-            <div class="container">
+        <div class="container">
+            <nav class="main-nav">
+
                 <div class="main-nav__wrapper">
-                    <a class="main-nav__logo"><img class="main-nav__logo-image" src="img/mishka-logo-mobile.png"
-                            width="86" height="35" alt="Логотип Mishki">
+                    <a class="main-nav__logo logo">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
+                            <img class="logo__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35"
+                                alt="Логотип Mishki">
+                        </picture>
                     </a>
                     <button class="main-nav__toggle toggle" type="button"><span class="toggle__burger "><span
                                 class="visually-hidden">Открыть
                                 меню</span></span></button>
                 </div>
-            </div>
-            <div class="main-nav__wrapper-menu">
+
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
-                        <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+                        <a class="site-list__item-link site-list__item-link--catalog" href="catalog.html">Каталог
+                            товаров</a>
                     </li>
                     <li class="site-list__item">
-                        <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+                        <a class="site-list__item-link site-list__item-link--order" href="form.html">Вязание на
+                            заказ</a>
                     </li>
                 </ul>
-                <ul class="main-nav__list user-list">
+                <ul class="main-nav__list   user-list">
                     <li class="user-list__item">
-                        <a class="user-list__search" href="#">Поиск по сайту</a>
+                        <a class="user-list__search" href="#"><span class="user-list__search-text"> Поиск по
+                                сайту</span></a>
                     </li>
                     <li class="user-list__item">
                         <a class="user-list__basket" href="#">Корзина: <span class="user-list__basket-indicator">пока
@@ -42,17 +50,18 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <ul class="main-nav__list promotion-list">
-                <li class="promotion-list__item">
-                    <a class="promotion-list__new-product" href="#">Новые поступления</a>
-                </li>
-                <li class="promotion-list__item">
-                    <a class="promotion-list__sale" href="#">Распродажа</a>
-                </li>
-            </ul>
-            <div class="main-nav__text">Бесплатная доставка по России</div>
-        </nav>
+                <ul class="main-nav__list promotion-list">
+                    <li class="promotion-list__item">
+                        <a class="promotion-list__new-product" href="#">Новые поступления</a>
+                    </li>
+                    <li class="promotion-list__item">
+                        <a class="promotion-list__sale" href="#">Распродажа</a>
+                    </li>
+                </ul>
+
+                <div class="main-nav__text">Бесплатная доставка по России</div>
+            </nav>
+        </div>
     </header>
     <main class="page-main">
         <div class="container">
@@ -248,18 +257,24 @@
 
             var toggle = document.querySelector(".toggle");
             var toggleBurger = document.querySelector(".toggle__burger");
-            var modalMenu = document.querySelector(".main-nav__wrapper-menu");
+            var modalSiteMenu = document.querySelector(".site-list");
+            var modalUserMenu = document.querySelector(".user-list");
 
             toggle.addEventListener("click", function (evt) {
                 evt.preventDefault();
                 (toggleBurger.classList.contains("toggle__burger--open") === true) ? toggleBurger.classList
                     .remove(
                         "toggle__burger--open"): toggleBurger.classList.add("toggle__burger--open");
-                (modalMenu.classList.contains("main-nav__wrapper-menu--open") === true) ? modalMenu
+
+                (modalSiteMenu.classList.contains("site-list--open") === true) ? modalSiteMenu
                     .classList
                     .remove(
-                        "main-nav__wrapper-menu--open"): modalMenu.classList.add(
-                        "main-nav__wrapper-menu--open");
+                        "site-list--open"): modalSiteMenu.classList.add("site-list--open");
+
+                (modalUserMenu.classList.contains("user-list--open") === true) ? modalUserMenu
+                    .classList
+                    .remove(
+                        "user-list--open"): modalUserMenu.classList.add("user-list--open");
 
             });
 

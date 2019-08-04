@@ -25,6 +25,9 @@ a {
 @media (min-width: 768px) {
     .page {
         background-image: url("../img/mishka-index-tablet.jpg");
+
+        width: 768px;
+
     }
 }
 
@@ -32,5 +35,7 @@ a {
 @media (min-width: 1250px) {
     .page {
         background-image: url("../img/mishka-index-desktop.jpg");
+
+        width: 1250px;
     }
 }

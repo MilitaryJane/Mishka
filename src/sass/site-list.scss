@@ -1,15 +1,20 @@
 @import "_style-lib.scss";
 
 .site-list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
 
     width: 320px;
     margin: 0;
+    margin-left: -30px;
     padding: 0;
 
     list-style: none;
     word-break: break-all;
+
+    font-size: 17px;
+    line-height: $base-line-height;
+    font-weight: 700;
 
     &__item {
         border-bottom: $base-border;
@@ -36,5 +41,59 @@
 
     &__item:first-child {
         border-top: $base-border;
+    }
+}
+
+.site-list--open {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .site-list {
+        position: absolute;
+        left: 0;
+        top: 77px;
+        display: flex;
+
+
+        width: 334px;
+        margin: 0;
+
+        &__item {
+            border-bottom: none;
+
+            &-link {
+                width: 167px;
+                padding-left: 0px;
+
+                font-size: 15px;
+            }
+        }
+
+        &__item:first-child {
+            border-top: none;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .site-list {
+        position: relative;
+        top: 0;
+        display: flex;
+        order: 0;
+
+        width: 380px;
+
+        &__item-link {
+            width: 185px;
+            font-size: 17px;
+
+            &--order {
+                padding-left: 35px;
+                width: 193px;
+                border-left: $base-border;
+            }
+        }
     }
 }
