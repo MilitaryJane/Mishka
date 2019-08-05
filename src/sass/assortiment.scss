@@ -2,15 +2,12 @@
 
 .assortiment {
     &__wrapper-title {
-        display: block;
         box-sizing: border-box;
-        width: 320px;
         min-height: 282px;
-        margin: 0 -30px;
         padding-top: 71px;
 
         background-image: url("../img/hero-mobile.jpg");
-        background-position: 0 -18px;
+        background-position: center -18px;
         background-repeat: no-repeat;
     }
 
@@ -25,7 +22,7 @@
         line-height: 30px;
         font-weight: 700;
 
-        width: 246px;
+        width: 260px;
     }
 
     &__list {
@@ -90,13 +87,120 @@
         }
     }
 
-    // &__item-link:hover,
-    // &__item-link:focus {
-    //     padding-top: 35px;
-    // }
+    &__item-link:hover,
+    &__item-link:focus {
+        margin-top: -10px;
+        padding-bottom: 40px;
 
-    &__item-text {
-        display: block;
-        width: 130px;
+    }
+
+    &__item-link:active {
+        margin-top: -10px;
+        padding-bottom: 40px;
+        color: #8be2d0;
+
+        &::after {
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .assortiment {
+        &__wrapper-title {
+            min-height: 626px;
+            padding-top: 153px;
+
+            background-image: url("../img/hero-desktop.jpg");
+            background-position: center 0;
+        }
+
+        &__title {
+            font-size: 43px;
+            line-height: 50px;
+
+            width: 500px;
+        }
+
+        &__list {
+            flex-direction: row;
+            position: relative;
+
+            &::after {
+                @include pseudo-element;
+                width: 668px;
+                height: 23px;
+                left: 0;
+                bottom: 0;
+
+                background-image: url("../img/zigzag-fill-tablet.png");
+                background-position: center 0;
+                background-repeat: no-repeat;
+            }
+        }
+
+
+        &__item-link {
+            width: 334px;
+            margin: 0;
+            padding-top: 27px;
+            padding-bottom: 45px;
+            padding-left: 33px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            &--interior::after {
+                @include pseudo-element;
+                top: 30px;
+            }
+
+            &--toy::after {
+                @include pseudo-element;
+                top: 31px;
+                right: 33px;
+            }
+        }
+
+        &__item-link:hover,
+        &__item-link:focus {
+            padding-bottom: 55px;
+        }
+    }
+}
+
+
+@media (min-width: 1250px) {
+    .assortiment {
+        &__wrapper-title {
+            background-position: center 0;
+        }
+
+        &__title {
+            font-size: 53px;
+            line-height: 57px;
+
+            width: 700px;
+        }
+
+        &__list {
+            &::after {
+                width: 1050px;
+                height: 31px;
+
+                background-image: url("../img/zigzag-fill-desktop.png");
+                background-position: center 0;
+            }
+        }
+
+
+        &__item-link {
+            width: 525px;
+        }
+
+        &__item-link:hover,
+        &__item-link:focus {
+            padding-bottom: 55px;
+        }
     }
 }
