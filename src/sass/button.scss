@@ -7,7 +7,7 @@
     padding: 0;
     padding-top: 14px;
     padding-bottom: 13px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     font-size: 17px;
     line-height: 20px;
@@ -51,5 +51,11 @@
 
     &--order-link {
         width: 192px;
+    }
+}
+
+@media (min-width: 768px) {
+    .button {
+        width: 290px;
     }
 }
