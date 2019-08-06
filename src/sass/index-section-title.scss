@@ -14,3 +14,23 @@
 
     width: 260px;
 }
+
+@media (min-width: 768px) {
+    .index-section-title {
+        font-size: $section-title-font-size-tablet;
+        line-height: $section-title-line-height-tablet;
+        font-weight: $section-title-font-weight;
+
+        width: 500px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .index-section-title {
+        font-size: $section-title-font-size-desktop;
+        line-height: $section-title-line-height-desktop;
+        font-weight: $section-title-font-weight;
+
+        width: 530px;
+    }
+}
