@@ -1,23 +1,40 @@
 @import "_style-lib.scss";
 
 .week-product {
+    position: relative;
     margin: 0;
     padding: 0;
     display: block;
-    padding-top: 26px;
-    padding-bottom: 36px;
+    padding-top: 27px;
+    padding-bottom: 42px;
 
-    @include border-image;
+    &::after {
+        @include pseudo-element;
+        width: 320px;
+        height: 6px;
+        left: -30px;
+        bottom: 0;
+
+        background-image: url("../img/zigzag-line-mobile.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+
+    &__title-wrapper {
+        margin-bottom: 23px;
+    }
 
     &__title {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
+
     }
 
     &__slogan {
         display: block;
+
         padding: 0;
         margin: 0;
-        margin-bottom: 22px;
         text-align: left;
 
         font-size: 17px;
@@ -26,14 +43,19 @@
         text-transform: uppercase;
         color: #63d1bb;
 
-        width: 260px;
+        width: 150px;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     &__text {
         display: block;
         padding: 0;
         margin: 0;
-        margin-bottom: 17px;
+        margin-bottom: 16px;
         text-align: left;
 
         font-size: 15px;
@@ -43,10 +65,11 @@
         width: 260px;
     }
 
+
     &__list {
         padding: 0;
         margin: 0;
-        margin-bottom: 28px;
+        margin-bottom: 27px;
 
         list-style: none;
         text-align: left;
@@ -74,12 +97,6 @@
         width: 162px;
     }
 
-    &__image {
-        width: 260px;
-        height: 315px;
-        margin-bottom: 23px;
-    }
-
     &__price {
         padding: 0;
         margin: 0 auto;
@@ -91,5 +108,160 @@
         font-weight: 700;
 
         width: 260px;
+    }
+
+    &__image {
+        width: 260px;
+        height: 315px;
+        margin-bottom: 23px;
+    }
+}
+
+@media (min-width: 768px) {
+    .week-product {
+        padding-top: 31px;
+        padding-bottom: 65px;
+
+        &::after {
+
+            width: 771px;
+            height: 15px;
+            left: -50px;
+
+            background-image: url("../img/zigzag-line-tablet.png");
+        }
+
+        &__title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 668px;
+
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__slogan {
+            margin-top: 10px;
+            text-align: center;
+
+            line-height: 17px;
+
+            width: 126px;
+        }
+
+        &__content-wrapper {
+            flex-wrap: wrap;
+            height: 412px;
+        }
+
+        &__info-wrapper {
+            margin-right: 45px;
+            margin-bottom: 53px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+
+            font-size: 17px;
+            line-height: 30px;
+
+            width: 290px;
+        }
+
+        &__list {
+            margin-bottom: 0;
+            width: 290px;
+        }
+
+        &__value {
+            width: 192px;
+        }
+
+        &__image {
+            width: 333px;
+            height: 404px;
+            margin-bottom: 0px;
+            padding-top: 8px;
+            order: 1;
+
+        }
+
+        &__price-wrapper {
+            width: 290px;
+        }
+
+        &__price {
+            margin-bottom: 35px;
+
+            font-size: 20px;
+
+            width: 290px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .week-product {
+        padding-left: 175px;
+        padding-top: 57px;
+        padding-bottom: 97px;
+
+        &::after {
+            width: 1050px;
+            height: 23px;
+            left: 0px;
+
+            background-image: url("../img/zigzag-line-desktop.png");
+        }
+
+        &__title-wrapper {
+            position: absolute;
+            top: 110px;
+            left: 0;
+
+            width: 700px;
+        }
+
+        &__title {
+            order: 1;
+        }
+
+        &__slogan {
+            margin-top: 15px;
+            margin-left: 17px;
+            text-align: center;
+
+            line-height: 17px;
+
+            width: 130px;
+        }
+
+        &__content-wrapper {
+
+            height: 636px;
+        }
+
+        &__info-wrapper {
+            margin-top: 159px;
+            margin-right: 58px;
+            margin-bottom: 107px;
+        }
+
+        &__text {
+            margin-bottom: 47px;
+        }
+
+        &__image {
+            padding-top: 0;
+            width: 525px;
+            height: 636px;
+        }
+
+        &__price-wrapper {
+            width: 290px;
+        }
     }
 }
