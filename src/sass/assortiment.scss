@@ -1,9 +1,13 @@
 @import "_style-lib.scss";
 
 .assortiment {
-    &__wrapper-title {
+    background-color: #f9f9f9;
+
+    &__wrapper {
+        width: 320px;
+        min-height: 490px;
         box-sizing: border-box;
-        min-height: 282px;
+        margin-left: -30px;
         padding-top: 71px;
 
         background-image: url("../img/hero-mobile.jpg");
@@ -15,6 +19,7 @@
         display: block;
         padding: 0;
         margin: 0 auto;
+        margin-bottom: 120px;
         text-align: center;
 
 
@@ -31,6 +36,7 @@
         flex-direction: column;
 
         margin: 0;
+        margin-left: 30px;
         padding: 0;
         list-style: none;
     }
@@ -107,17 +113,20 @@
 
 @media (min-width: 768px) {
     .assortiment {
-        &__wrapper-title {
-            min-height: 626px;
+        &__wrapper {
+            width: 768px;
+            min-height: 746px;
             padding-top: 153px;
+            margin-left: -50px;
 
-            background-image: url("../img/hero-desktop.jpg");
+            background-image: url("../img/hero-tablet.jpg");
             background-position: center 0;
         }
 
         &__title {
             font-size: 43px;
             line-height: 50px;
+            margin-bottom: 375px;
 
             width: 500px;
         }
@@ -125,12 +134,13 @@
         &__list {
             flex-direction: row;
             position: relative;
+            margin-left: 50px;
 
             &::after {
                 @include pseudo-element;
-                width: 668px;
+                width: 768px;
                 height: 23px;
-                left: 0;
+                left: -50px;
                 bottom: 0;
 
                 background-image: url("../img/zigzag-fill-tablet.png");
@@ -138,7 +148,6 @@
                 background-repeat: no-repeat;
             }
         }
-
 
         &__item-link {
             width: 334px;
@@ -172,24 +181,36 @@
 
 @media (min-width: 1250px) {
     .assortiment {
-        &__wrapper-title {
-            background-position: center 0;
+        min-width: 1250px;
+        background-color: #f9f9f9;
+        margin-left: -100px;
+
+        &__wrapper {
+            width: 1250px;
+            min-height: 759px;
+            margin-left: 0px;
+            background-image: url("../img/hero-desktop.jpg");
+            background-position: 50px 0;
+
         }
 
         &__title {
             font-size: 53px;
             line-height: 57px;
+            margin-bottom: 360px;
 
             width: 700px;
         }
 
         &__list {
+            margin-left: 100px;
+
             &::after {
-                width: 1050px;
+                width: 1250px;
                 height: 31px;
 
                 background-image: url("../img/zigzag-fill-desktop.png");
-                background-position: center 0;
+                background-position: 10px 0;
             }
         }
 
