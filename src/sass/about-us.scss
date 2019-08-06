@@ -1,0 +1,172 @@
+@import "_style-lib.scss";
+
+.about-us {
+    display: block;
+    padding-top: 28px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: block;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        margin: 0;
+        margin-bottom: 28px;
+        padding: 0;
+        padding-top: 55px;
+        width: 260px;
+
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 700;
+
+        &::before {
+            @include pseudo-element;
+            top: 0;
+
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+
+        &--eco-materials::before {
+            width: 32px;
+            height: 37px;
+            left: 8px;
+
+            background-image: url("../img/icon-1.png");
+        }
+
+        &--Scandinavian-style::before {
+            width: 47px;
+            height: 27px;
+            top: 2px;
+            left: 0;
+
+            background-image: url("../img/icon-2.png");
+        }
+
+        &--more-likes::before {
+            width: 34px;
+            height: 27px;
+            top: 6px;
+            left: 7px;
+
+
+            background-image: url("../img/icon-3.png");
+        }
+
+        &--made-with-love::before {
+            width: 35px;
+            height: 34px;
+            top: 3px;
+            left: 3px;
+
+            background-image: url("../img/icon-4.png");
+        }
+
+        &--domestic-manufacturer::before {
+            width: 55px;
+            height: 23px;
+            top: 5px;
+            left: -6px;
+
+            background-image: url("../img/icon-5.png");
+        }
+
+        &--gift-wrap::before {
+            width: 33px;
+            height: 32px;
+            top: 2px;
+            left: 3px;
+
+            background-image: url("../img/icon-6.png");
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        padding-top: 50px;
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin-bottom: 55px;
+            padding-top: 55px;
+            width: 334px;
+
+            font-size: 20px;
+            line-height: 22px;
+
+            &::before {
+                @include pseudo-element;
+                top: 0;
+
+                background-position: 0 0;
+                background-repeat: no-repeat;
+            }
+
+            &--eco-materials {
+                order: 0;
+            }
+
+            &--Scandinavian-style {
+                order: 2;
+            }
+
+            &--Scandinavian-style::before {
+                top: 2px;
+            }
+
+            &--more-likes {
+                order: 4;
+                margin-bottom: 0;
+            }
+
+            &--more-likes::before {
+                top: 6px;
+
+            }
+
+            &--made-with-love {
+                order: 1;
+            }
+
+            &--made-with-love::before {
+                top: 3px;
+            }
+
+            &--domestic-manufacturer {
+                order: 3;
+            }
+
+            &--domestic-manufacturer::before {
+                top: 5px;
+            }
+
+            &--gift-wrap {
+                order: 5;
+                margin-bottom: 0;
+            }
+
+            &--gift-wrap::before {
+                top: 2px;
+            }
+        }
+    }
+}
