@@ -1,0 +1,17 @@
+@import "_style-lib.scss";
+
+.logo-footer {
+    .logo {
+        width: 102px;
+        height: 34px;
+
+        &:focus,
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+}
