@@ -1,7 +1,8 @@
 @import "_style-lib.scss";
 
 .contacts {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 36px 0 40px 0;
 
@@ -14,7 +15,7 @@
 
         font-size: 18px;
         line-height: 30px;
-        font-weight: 700;
+        font-weight: $section-title-font-weight;
 
         width: 260px;
     }
@@ -36,7 +37,6 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        border-bottom: $base-border;
     }
 
     &__field {
@@ -97,5 +97,125 @@
         background-image: url("../img/map-pin.png");
         background-position: 0 0;
         background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        position: relative;
+        padding: 61px 0 57px 0;
+
+        &::before {
+            @include pseudo-element;
+
+            top: 46px;
+            right: 2px;
+
+            width: 47px;
+            height: 81px;
+
+            background-image: url("../img/flag.png");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+
+            font-size: $section-title-font-size-tablet;
+            line-height: $section-title-line-height-tablet;
+
+            width: 334px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            width: 668px;
+            margin-bottom: 55px;
+
+            font-size: 17px;
+        }
+
+        &__item {
+            width: 334px;
+        }
+
+        &__value {
+            padding-bottom: 0;
+            width: 259px;
+        }
+
+        &__map {
+            width: 768px;
+            margin-left: -50px;
+            margin-bottom: 56px;
+        }
+
+        &__map::after {
+            top: 140px;
+            left: 364px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .contacts {
+        flex-wrap: wrap;
+        width: 1050px;
+        height: 457px;
+        padding: 71px 0 57px 175px;
+        margin-bottom: 50px;
+
+        &::before {
+            top: 133px;
+            left: 62px;
+        }
+
+        &__wrapper {
+            width: 350px;
+            padding-top: 70px;
+        }
+
+        &__title {
+            font-size: $section-title-font-size-desktop;
+            line-height: $section-title-line-height-desktop;
+
+            width: 350px;
+        }
+
+        &__list {
+            width: 350px;
+            margin-bottom: 80px;
+
+            font-size: 17px;
+        }
+
+        &__item {
+            width: 350px;
+
+            &:first-child {
+                margin-bottom: 29px;
+            }
+        }
+
+        &__value {
+            width: 273px;
+        }
+
+
+        &__map {
+            width: 525px;
+            margin-left: 0;
+            margin-bottom: 0;
+            order: 1;
+        }
+
+        &__map::after {
+            top: 144px;
+            left: 150px;
+        }
     }
 }

@@ -57,8 +57,21 @@
     .button {
         width: 290px;
 
-        &--write {
+        &--reviews {
             width: 176px;
+        }
+
+        &--contacts {
+            width: 230px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .button {
+        &--contacts {
+            margin: 0;
         }
     }
 }
