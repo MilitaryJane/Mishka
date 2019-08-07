@@ -1,10 +1,20 @@
 @import "_style-lib.scss";
 
 .reviews {
-    display: block;
-    padding: 28px 0 45px 0;
-    margin: 0;
-    @include border-image;
+    position: relative;
+    padding: 28px 0 51px 0;
+
+    &::after {
+        @include pseudo-element;
+        width: 320px;
+        height: 6px;
+        left: -30px;
+        bottom: 0;
+
+        background-image: url("../img/zigzag-line-mobile.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
 
     &__title {
         margin-bottom: 23px;
@@ -21,6 +31,7 @@
     }
 
     &__text {
+        width: 260px;
         margin: 0;
         margin-bottom: 26px;
         padding: 0;
@@ -34,6 +45,7 @@
 
     &__author-name {
         display: block;
+        width: 260px;
         margin: 0;
         padding: 0;
 
@@ -47,8 +59,9 @@
 
     &__author-login {
         display: block;
+        width: 130px;
         margin: 0;
-        margin-top: 5px;
+        margin-top: 4px;
         margin-bottom: 27px;
         padding: 0;
 
@@ -87,13 +100,13 @@
     &__toggles-next::before {
         @include pseudo-element;
         top: 24px;
-        width: 49px;
+        width: 47px;
         height: 4px;
         background-color: #000000;
     }
 
     &__toggles-previous::before {
-        left: 38px;
+        left: 40px;
     }
 
     &__toggles-next::before {
@@ -106,31 +119,31 @@
     &__text-next::after {
         @include pseudo-element;
         width: 18px;
-        height: 3px;
+        height: 4px;
         background-color: #000000;
     }
 
     &__text-previous::before {
         top: 19px;
-        left: 33px;
+        left: 36px;
         transform: rotate(-45deg);
     }
 
     &__text-previous::after {
         top: 30px;
-        left: 33px;
+        left: 36px;
         transform: rotate(45deg);
     }
 
     &__text-next::before {
         top: 19px;
-        right: 33px;
+        right: 36px;
         transform: rotate(45deg);
     }
 
     &__text-next::after {
         top: 30px;
-        right: 33px;
+        right: 36px;
         transform: rotate(-45deg);
     }
 
@@ -144,5 +157,145 @@
     &__toggles-previous:active,
     &__toggles-next:active {
         opacity: 0.3;
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews {
+        width: 768px;
+        margin-left: -50px;
+        padding: 0;
+        padding-bottom: 130px;
+        background-image: url("../img/review.jpg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+        &::after {
+            width: 771px;
+            height: 15px;
+            left: 0;
+
+            background-image: url("../img/zigzag-line-tablet.png");
+        }
+
+        &__wrapper {
+            padding-top: 76px;
+            padding-left: 50px;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            width: 668px;
+            margin-bottom: 57px;
+
+            font-size: 17px;
+        }
+
+        &__author-name {
+            width: 334px;
+        }
+
+        &__author-login {
+            width: 167px;
+            margin-bottom: 0;
+        }
+
+        &__controls-wrapper {
+            position: absolute;
+            top: 79px;
+            right: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 176px;
+        }
+
+        &__button {
+            margin-bottom: 225px;
+        }
+
+        &__toggles {
+            margin-bottom: 0px;
+            width: 176px;
+        }
+
+        &__toggles-previous,
+        &__toggles-next {
+            width: 88px;
+            border: none;
+        }
+
+        &__toggles-previous::before,
+        &__toggles-next::before {
+            width: 47px;
+
+        }
+
+        &__toggles-previous::before {
+            left: 23px;
+        }
+
+        &__toggles-next::before {
+            left: 20px;
+        }
+
+        &__text-previous::before,
+        &__text-previous::after,
+        &__text-next::before,
+        &__text-next::after {
+            height: 4px;
+        }
+
+        &__text-previous::before {
+            left: 20px;
+        }
+
+        &__text-previous::after {
+            left: 20px;
+        }
+
+        &__text-next::before {
+            right: 17px;
+        }
+
+        &__text-next::after {
+            right: 17px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .reviews {
+        width: 1050px;
+        margin-left: 0px;
+
+        padding-bottom: 185px;
+
+        &::after {
+            width: 1050px;
+            height: 23px;
+
+            background-image: url("../img/zigzag-line-desktop.png");
+        }
+
+        &__wrapper {
+            padding-top: 70px;
+            padding-left: 175px;
+        }
+
+        &__text {
+            width: 780px;
+            margin-bottom: 37px;
+        }
+
+        &__controls-wrapper {
+            right: 0;
+        }
+
+        &__button {
+            margin-bottom: 177px;
+        }
     }
 }
