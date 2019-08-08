@@ -12,10 +12,6 @@
     list-style: none;
     word-break: break-all;
 
-    font-size: 17px;
-    line-height: $base-line-height;
-    font-weight: 700;
-
     &__item {
         border-bottom: $base-border;
 
@@ -26,6 +22,11 @@
             padding-top: 30px;
             padding-bottom: 30px;
             padding-left: 77px;
+
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 700;
+
             color: $link-color;
 
             &:focus,
@@ -50,11 +51,10 @@
 
 @media (min-width: 768px) {
     .site-list {
+        display: flex;
         position: absolute;
         left: 0;
         top: 77px;
-        display: flex;
-
 
         width: 334px;
         margin: 0;
@@ -88,6 +88,7 @@
         &__item-link {
             width: 185px;
             font-size: 17px;
+            padding-bottom: 34px;
 
             &--order {
                 padding-left: 35px;

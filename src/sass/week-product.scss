@@ -1,10 +1,14 @@
 @import "_style-lib.scss";
 
 .week-product {
+    display: flex;
+    flex-direction: column;
+
     position: relative;
+
     margin: 0;
     padding: 0;
-    display: block;
+
     padding-top: 27px;
     padding-bottom: 42px;
 
@@ -41,7 +45,7 @@
         line-height: 20px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #63d1bb;
+        color: $companion3-text-color;
 
         width: 150px;
     }
@@ -123,7 +127,6 @@
         padding-bottom: 65px;
 
         &::after {
-
             width: 771px;
             height: 15px;
             left: -50px;

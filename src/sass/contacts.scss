@@ -15,7 +15,7 @@
 
         font-size: 18px;
         line-height: 30px;
-        font-weight: $section-title-font-weight;
+        font-weight: 700;
 
         width: 260px;
     }
@@ -30,7 +30,7 @@
         line-height: 30px;
         font-weight: 400;
 
-        color: $companion-font-color;
+        color: $companion1-text-color;
     }
 
     &__item {
@@ -56,11 +56,11 @@
 
     &__email {
         position: relative;
-        color: $companion-font-color;
+        color: $mail-link-color;
 
         &:focus,
         &:hover {
-            color: #62d1ba;
+            color: $mail-link-focus-color;
         }
 
         &:active {
@@ -75,7 +75,7 @@
         width: 100%;
         height: 1px;
 
-        background-color: #62d1ba;
+        background-color: $companion1-bg-color;
     }
 
     &__map {

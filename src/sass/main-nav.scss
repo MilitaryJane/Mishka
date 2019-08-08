@@ -5,20 +5,20 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    margin: 0;
+
     box-sizing: border-box;
 
     &__wrapper {
         width: 260px;
         display: flex;
         justify-content: space-between;
+        margin: 0;
     }
 
     &__logo {
-        width: 86px;
-        height: 35px;
-
-        margin-left: 86px;
         margin-top: 22px;
+        margin-left: 86px;
         margin-bottom: 22px;
     }
 
@@ -29,7 +29,7 @@
 
     &__text {
         font-size: 15px;
-        line-height: $base-line-height;
+        line-height: 24px;
         font-weight: 400;
         display: none;
     }
@@ -47,9 +47,6 @@
         }
 
         &__logo {
-            width: 113px;
-            height: 46px;
-
             margin-left: -2px;
             margin-bottom: 20px;
 
@@ -77,11 +74,7 @@
         }
 
         &__logo {
-            width: 149px;
-            height: 72px;
-
             margin: 9px 101px 7px 75px;
-
         }
     }
 }

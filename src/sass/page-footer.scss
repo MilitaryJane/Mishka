@@ -2,11 +2,10 @@
 
 .page-footer {
     width: 320px;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 
-    background-color: #f1f1f1;
+    background-color: $companion2-bg-color;
 
     &__wrapper {
         display: flex;
@@ -34,6 +33,7 @@
 
         &__wrapper {
             flex-direction: row;
+            flex-wrap: wrap;
             width: 668px;
         }
 
@@ -47,7 +47,7 @@
         &__social {
             padding: 57px 0;
             margin: 0;
-            margin-right: 84px;
+            margin-right: 82px;
         }
 
         &__copyright {
@@ -66,21 +66,12 @@
         }
 
         &__logo {
-            display: block;
-            padding: 51px 0 58px 0;
             margin-right: 350px;
 
         }
 
         &__social {
-            padding: 57px 0;
-            margin: 0;
             margin-right: 272px;
-        }
-
-        &__copyright {
-            padding: 58px 0 51px 0;
-            margin: 0;
         }
     }
 }

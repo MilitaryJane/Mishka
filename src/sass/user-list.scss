@@ -13,10 +13,6 @@
     list-style: none;
     word-break: break-all;
 
-    font-size: 17px;
-    line-height: $base-line-height;
-    font-weight: 700;
-
     &__item {
         box-sizing: border-box;
         border-bottom: $base-border;
@@ -35,6 +31,11 @@
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 77px;
+
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 700;
+
         color: $link-color;
 
         &:focus,

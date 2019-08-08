@@ -10,9 +10,9 @@
     font-size: 17px;
     line-height: 17px;
     font-weight: 700;
-    color: $companion-font-color;
     text-align: center;
 
+    color: $size-select-color;
 
     background-color: $size-select-bg-color;
     border: $size-select-border;
@@ -30,6 +30,5 @@
 @media (min-width: 768px) {
     .size-select {
         width: 112px;
-
     }
 }
