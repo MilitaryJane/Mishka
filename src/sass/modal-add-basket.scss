@@ -2,10 +2,13 @@
 
 .modal-add-basket {
     display: none;
-    min-width: 320px;
+    // display: block;
+    box-sizing: border-box;
+    width: 320px;
+
 
     position: absolute;
-    top: 1046px;
+    top: 1055px;
     left: 50%;
     z-index: 102;
     margin-left: -160px;
@@ -18,6 +21,11 @@
     box-shadow: 0 5px 10px -3px rgba($color: #000101, $alpha: 0.25);
 
 
+    &__wrapper {
+        width: 260px;
+        text-align: center;
+    }
+
     &__title {
         display: block;
         width: 155px;
@@ -26,10 +34,15 @@
         padding: 0;
 
         text-transform: uppercase;
+
+        font-size: $section-title-font-size;
+        list-style: $section-title-line-height;
+        font-weight: $section-title-font-weight;
     }
 
     &__form-field {
         border: none;
+        padding: 0;
     }
 
     &__text {
@@ -51,8 +64,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         width: 260px;
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 30px;
         padding: 0;
         list-style: none;
@@ -62,9 +76,78 @@
         border: $size-select-active-border;
     }
 
+    &__button {
+        margin: 0 auto;
+    }
+
 
 }
 
 .modal-add-basket--open {
     display: block;
+}
+
+@media (min-width: 768px) {
+    .modal-add-basket {
+        width: 566px;
+        margin-left: -283px;
+
+        border: 1px solid #c7c7c7;
+
+
+        &__wrapper {
+            width: 464px;
+        }
+
+        &__title {
+            width: 464px;
+            margin-bottom: 15px;
+
+            font-size: 30;
+            list-style: $section-title-line-height-tablet;
+        }
+
+        &__text {
+
+            width: 334px;
+
+            margin-bottom: 20px;
+
+            font-size: 17px;
+            text-align: center;
+        }
+
+        &__list {
+            width: 350px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .modal-add-basket {
+        &__wrapper {
+            width: 350px;
+        }
+
+        &__title {
+            width: 350px;
+            margin-bottom: 15px;
+
+            font-size: 30;
+            list-style: $section-title-line-height-tablet;
+        }
+
+        &__text {
+            width: 334px;
+
+            margin-bottom: 20px;
+
+            font-size: 17px;
+            text-align: center;
+        }
+
+        &__list {
+            width: 350px;
+        }
+    }
 }

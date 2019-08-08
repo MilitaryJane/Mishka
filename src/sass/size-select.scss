@@ -2,6 +2,7 @@
 
 .size-select {
     display: block;
+    box-sizing: border-box;
     width: 78px;
     margin: 0;
     padding: 15px 0;
@@ -23,5 +24,12 @@
 
     &:active {
         border: $size-select-active-border;
+    }
+}
+
+@media (min-width: 768px) {
+    .size-select {
+        width: 112px;
+
     }
 }
