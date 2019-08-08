@@ -1,43 +1,95 @@
-$base-font-color: #000000;
-$companion-font-color: #444444;
-$base-bg-color: #ffffff;
-$companion-color: #62d1ba;
-$base-line-height: 24px;
-$main-nav-font-size: 17px;
+// Text colors
+$base-text-color: #000000;
+$companion1-text-color: #444444;
+$companion2-text-color: #ffffff;
+$companion3-text-color: #63d1bb;
 
+
+
+// Backgrounds colors
+$base-bg-color: #ffffff;
+$companion1-bg-color: #62d1ba;
+$companion2-bg-color: #f1f1f1;
+$companion3-bg-color: #63d1bb;
+$companion4-bg-color: #56c3b2;
+$companion5-bg-color: #000000;
+
+
+
+// Links colors
 $link-color: #000000;
 $link-focus-color: #666666;
 $link-active-color: #b2b2b2;
 
-$base-border: 1px solid #ececec;
 
-$base-batton-border: 2px solid #444444;
+
+// Mail-links taet color 
+$mail-link-color: #444444;
+$mail-link-focus-color: #46c1ae;
+
+
+
+$base-line-height: 24px;
+
+
+
+// Borders
+$base-border: 1px solid #ececec;
+$catalog-border: 1px solid #ededed;
+
+// Base button style
 $base-batton-color: #444444;
-$base-batton-focus-color: #ffffff;
-$base-batton-active-color: #7c7c7c;
 $base-batton-bg-color: #ffffff;
+$base-batton-border: 2px solid #444444;
+// Button-focus style
+$base-batton-focus-color: #ffffff;
 $base-batton-bg-focus-color: #444444;
+// Button-active style
+$base-batton-active-color: #7c7c7c;
 $base-batton-bg-active-color: #444444;
 
+
+
+// Section title font style
+// Mobile
 $section-title-font-size: 25px;
 $section-title-line-height: 30px;
 $section-title-font-weight: 700;
+// Tablet
+$section-title-font-size-tablet: 43px;
+$section-title-line-height-tablet: 50px;
+// Desktop
+$section-title-font-size-desktop: 53px;
+$section-title-line-height-desktop: 57px;
 
+
+
+//Button size-select style
+$size-select-color:#62d1ba;
 $size-select-bg-color: #ffffff;
 $size-select-border: 2px solid #ececec;
 $size-select-focus-border: 2px solid #c7c7c7;
 $size-select-active-border: 2px solid #62d1ba;
 
-$bt-add-basket-bg-color: #63d1bb;
-$bt-add-basket-font-color: #ffffff;
-$bt-add-basket-border: 2px solid #63d1bb;
 
+
+// Button add-baskes style
+$bt-add-basket-color: #ffffff;
+$bt-add-basket-bg-color: #63d1bb;
+$bt-add-basket-border: 2px solid #63d1bb;
+// Button-focus style
+$bt-add-basket-focus-color: #63d1bb;
 $bt-add-basket-focus-bg-color: #ffffff;
-$bt-add-basket-focus-font-color: #63d1bb;
 $bt-add-basket-focus-border: 2px solid #63d1bb;
+// Button-active style
+$bt-add-basket-active-color: #7c7c7c;
 $bt-add-basket-active-bg-color: #ffffff;
-$bt-add-basket-active-font-color: #7c7c7c;
 $bt-add-basket-active-border: 2px solid #7c7c7c;
+
+
+
+
+
 
 $inner-page-title-bg-color: #f1f1f1;
 $inner-page-title-color: #231f20;
@@ -45,7 +97,7 @@ $inner-page-title-font-size: 27px;
 $inner-page-title-line-height: 30px;
 $inner-page-title-font-weight: 700;
 
-$catalog-border: 1px solid #ededed;
+
 
 $catalog-item-font-size: 17px;
 $catalog-item-line-height: 24px;
@@ -67,18 +119,11 @@ $input-border-focus: 1px solid #62d1ba;
 $input-text-color: #444444;
 $input-placeholder-color: #c7c7c7;
 
-
+// Overlay
 $overlay-bg-color: rgba(255, 255, 250, 0.8);
 
 @mixin pseudo-element ($content: "", $display:block, $pos:absolute) {
     content: $content;
     display: $display;
     position: $pos;
-}
-
-;
-
-@mixin border-image {
-    border-bottom: 6px solid transparent;
-    border-image: url("../img/zigzag-line-desktop.png") 0 0 6;
 }
