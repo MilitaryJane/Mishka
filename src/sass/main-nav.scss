@@ -58,6 +58,7 @@
 
         &__text {
             position: absolute;
+            z-index: 100;
             display: block;
             top: 105px;
             right: 0;

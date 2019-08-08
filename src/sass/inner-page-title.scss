@@ -3,15 +3,59 @@
 .inner-page-title {
     display: block;
     box-sizing: border-box;
-    padding: 70px 0;
+    padding: 70px 0 75px;
     width: 320px;
-    min-height: 176px;
 
     text-align: center;
-    font-size: $inner-page-title-font-size;
-    line-height: $inner-page-title-line-height;
-    font-weight: $inner-page-title-font-weight;
-    color: $inner-page-title-color;
+    font-size: $ip-title-font-size;
+    line-height: $ip-title-line-height;
+    font-weight: $ip-title-font-weight;
 
-    background-color: $inner-page-title-bg-color;
+    color: $ip-title-color;
+
+    background-color: $ip-title-bg-color;
+}
+
+@media (min-width: 768px) {
+    .inner-page-title {
+        position: relative;
+
+        padding: 94px 0 90px;
+        width: 768px;
+
+        font-size: $ip-title-font-size-tablet;
+        line-height: $ip-title-line-height-tablet;
+
+        &::after {
+            @include pseudo-element;
+            width: 768px;
+            height: 23px;
+            left: 0px;
+            bottom: 0;
+
+            background-image: url("../img/zigzag-fill-tablet.png");
+            background-position: center 0;
+        }
+
+    }
+}
+
+@media (min-width: 1250px) {
+    .inner-page-title {
+
+        padding: 92px 0 120px;
+        width: 1250px;
+
+        font-size: $ip-title-font-size-desktop;
+        line-height: $ip-title-line-height-desktop;
+
+        &::after {
+            width: 1250px;
+            height: 33px;
+            left: 0;
+
+            background-image: url("../img/zigzag-fill-desktop.png");
+            background-position: 0 0;
+        }
+    }
 }

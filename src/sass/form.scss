@@ -12,7 +12,7 @@
         font-size: 13px;
         line-height: 24px;
         font-weight: 400;
-        color: $companion-font-color;
+        color: $companion1-text-color;
     }
 
     &__field {
@@ -22,13 +22,13 @@
         margin: 0;
         width: 260px;
         border: none;
-        border-top: 1px solid $companion-color;
+        border-top: 1px solid $companion1-bg-color;
     }
 
     &__name {
         min-width: 45px;
         padding-right: 20px;
-        color: $companion-color;
+        color: $companion3-text-color;
         font-size: 17px;
         font-weight: 700;
 
@@ -197,6 +197,6 @@
         font-size: 14px;
         line-height: 16px;
         font-weight: 400;
-        color: $companion-font-color;
+        color: $companion1-text-color;
     }
 }

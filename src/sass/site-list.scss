@@ -55,6 +55,7 @@
         position: absolute;
         left: 0;
         top: 77px;
+        z-index: 100;
 
         width: 334px;
         margin: 0;
@@ -80,6 +81,7 @@
     .site-list {
         position: relative;
         top: 0;
+        z-index: auto;
         display: flex;
         order: 0;
 

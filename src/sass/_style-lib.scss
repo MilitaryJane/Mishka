@@ -89,23 +89,41 @@ $bt-add-basket-active-border: 2px solid #7c7c7c;
 
 
 
+// Inner-page title style
+// Mobile
+$ip-title-color: #231f20;
+$ip-title-bg-color: #f1f1f1;
+
+$ip-title-font-size: 27px;
+$ip-title-line-height: 30px;
+$ip-title-font-weight: 700;
+//Tablet
+$ip-title-font-size-tablet: 43px;
+$ip-title-line-height-tablet: 50px;
+//Desktop
+$ip-title-font-size-desktop: 53px;
+$ip-title-line-height-desktop: 57px;
 
 
-$inner-page-title-bg-color: #f1f1f1;
-$inner-page-title-color: #231f20;
-$inner-page-title-font-size: 27px;
-$inner-page-title-line-height: 30px;
-$inner-page-title-font-weight: 700;
 
-
-
+// Catalog item font style
+// Mobile
 $catalog-item-font-size: 17px;
 $catalog-item-line-height: 24px;
 $catalog-item-font-weight: 700;
+// Tablet
+$catalog-item-font-size-tablet: 20px;
 
+
+// Catalog item-text font style
+// Mobile
 $catalog-item-text-font-size: 13px;
 $catalog-item-text-line-height: 30px;
 $catalog-item-text-font-weight: 400;
+// Tablet
+$catalog-item-text-font-size-tablet: 15px;
+
+
 
 
 $check-radio-border: 2px solid #444444;

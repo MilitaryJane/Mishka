@@ -6,7 +6,7 @@
     width: 260px;
     padding: 0;
     padding-top: 14px;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
 
     font-size: 17px;
     line-height: 20px;
@@ -50,6 +50,7 @@
 
     &--order-link {
         width: 192px;
+        margin: 0 auto;
     }
 }
 
@@ -69,12 +70,22 @@
         &--add-basket {
             width: 350px;
         }
+
+        &--order-link {
+            width: 585px;
+            margin: 0 auto;
+        }
     }
 }
 
 @media (min-width: 1250px) {
     .button {
         &--contacts {
+            margin: 0;
+        }
+
+        &--order-link {
+            width: 232px;
             margin: 0;
         }
     }

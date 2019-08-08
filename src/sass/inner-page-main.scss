@@ -1,5 +1,8 @@
 .inner-page-main {
 
+    display: flex;
+    flex-direction: column;
+
     &__wrapper {
         padding-bottom: 60px;
     }
@@ -11,5 +14,42 @@
 
     &__product-order {
         margin-bottom: 55px;
+    }
+}
+
+@media (min-width: 768px) {
+    .inner-page-main {
+
+        &__wrapper {
+            padding-bottom: 60px;
+
+        }
+
+        &__title {
+            margin-left: -50px;
+        }
+
+        &__product-order {
+            margin-bottom: 55px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .inner-page-main {
+
+
+        &__wrapper {
+            padding-bottom: 60px;
+
+        }
+
+        &__title {
+            margin-left: -100px;
+        }
+
+        &__product-order {
+            margin-bottom: 55px;
+        }
     }
 }

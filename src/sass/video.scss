@@ -1,7 +1,9 @@
 @import "_style-lib.scss";
 
 .video {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
     padding: 0;
     padding-bottom: 32px;
     margin: 0;
@@ -10,13 +12,14 @@
     &__title {
         position: relative;
         display: block;
-        padding: 24px 0 24px 90px;
+        box-sizing: border-box;
+        padding: 23px 0 24px 90px;
         margin: 0;
 
         font-size: $catalog-item-font-size;
         line-height: $catalog-item-line-height;
         font-weight: $catalog-item-font-weight;
-        color: $base-font-color;
+        color: $base-text-color;
 
         &::before {
             @include pseudo-element;
@@ -38,7 +41,7 @@
         height: 150px;
         position: relative;
 
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
 
     &__content {
@@ -78,18 +81,115 @@
 
     &__text {
         display: block;
-        margin: 0;
-        margin-bottom: 47px;
+        margin: 0 auto;
+        margin-bottom: 49px;
         padding: 0;
-        padding-left: 34px;
 
         width: 194px;
 
         font-size: 13px;
-        line-height: $base-line-height;
+        line-height: 24px;
         font-weight: 400;
-        color: $companion-font-color;
+        color: $companion1-text-color;
+    }
 
+}
 
+@media (min-width: 768px) {
+    .video {
+        padding-bottom: 45px;
+
+        &__title {
+            position: relative;
+            padding: 30px 0 24px 105px;
+            margin: 0;
+            margin-bottom: 7px;
+
+            font-size: $catalog-item-font-size-tablet;
+
+            order: 1;
+
+            &::before {
+                top: 30px;
+                left: 42px;
+            }
+        }
+
+        &__content-wrapper {
+            width: 668px;
+            height: 455px;
+
+            margin-bottom: 10px;
+
+            order: 0;
+        }
+
+        &__content {
+            width: 668px;
+            height: 455px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+
+            width: 585px;
+
+            font-size: 15px;
+            line-height: 30px;
+
+            order: 2;
+        }
+
+        &__order-link {
+            order: 3;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .video {
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+        margin-bottom: 43px;
+        width: 1050px;
+        height: 455px;
+
+        &__title {
+
+            width: 350px;
+            padding: 95px 60px 24px 60px;
+
+            margin-bottom: 10px;
+
+            &::before {
+                top: 47px;
+                left: 60px;
+            }
+        }
+
+        &__content-wrapper {
+            width: 682px;
+
+            margin-bottom: 0;
+            margin-right: 18px;
+        }
+
+        &__content {
+            width: 682px;
+        }
+
+        &__text {
+            margin: 0;
+            margin-bottom: 45px;
+
+            width: 350px;
+            box-sizing: border-box;
+            padding: 0 60px;
+
+        }
+
+        &__order-link {
+            margin: 0 60px;
+        }
     }
 }
