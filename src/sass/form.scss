@@ -17,6 +17,10 @@
         color: $companion1-text-color;
     }
 
+    &__wrapper {
+        margin-bottom: 16px;
+    }
+
     &__field {
         position: relative;
         display: block;
@@ -59,15 +63,14 @@
         }
 
         &--textarea {
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
     }
 
     &__item {
         display: block;
         box-sizing: border-box;
-        // margin: 0;
-        // padding: 0;
+
         padding-left: 62px;
 
         &--type-select {
@@ -222,6 +225,12 @@
 
     }
 
+    &__info-wrapper {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__info {
         margin: 0;
         margin-bottom: 30px;
@@ -231,5 +240,194 @@
         line-height: 16px;
         font-weight: 400;
         color: $companion1-text-color;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        &__text {
+            width: 668px;
+            padding: 62px 0 8px 0;
+
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+
+            margin-left: -50px;
+            margin-bottom: 3px;
+        }
+
+        &__field {
+            display: flex;
+            box-sizing: border-box;
+            padding-top: 50px;
+
+
+            width: 768px;
+            padding-left: 50px;
+            border: none;
+
+            &--email {
+                padding-top: 0;
+            }
+
+            &--grey {
+                background-color: $companion2-bg-color;
+            }
+        }
+
+        &__name {
+            width: 168px;
+            padding-right: 0;
+            padding-top: 14px;
+        }
+
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 500px;
+
+            margin-bottom: 50px;
+            padding-top: 0;
+
+            &--user-contacts {
+                margin-bottom: 45px;
+            }
+
+            &--user-contacts-phone {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__item {
+            padding-left: 79px;
+
+            &--type-select {
+                width: 500px;
+                margin-bottom: 25px;
+            }
+
+            &--color-select {
+                width: 239px;
+
+                margin-bottom: 25px;
+
+                &:nth-last-child(-n+2) {
+                    margin-bottom: 0px;
+                }
+            }
+
+            &--user-full-name {
+                display: flex;
+                width: 500px;
+                padding: 0px;
+
+                margin-bottom: 22px;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        &__label {
+            padding: 15px 0 17px 0;
+
+            font-size: 19px;
+            line-height: 19px;
+
+
+            &--type-select::before,
+            &--color-select::before {
+                left: -80px;
+                width: 52px;
+                height: 52px;
+            }
+
+            &--color-select::before {
+                width: 54px;
+            }
+
+            &--user-full-name {
+                min-width: 46px;
+                margin-right: 25px;
+            }
+
+            &--user-contacts,
+            &--add-info {
+                display: none;
+            }
+        }
+
+        &__option-property:checked+&__label--type-select::after {
+            top: 15px;
+            left: -65px;
+            width: 22px;
+            height: 22px;
+        }
+
+        &__option-property:checked+&__label--color-select::after {
+            @include pseudo-element;
+            top: 17px;
+            left: -70px;
+            width: 33px;
+            height: 22px;
+
+            background-image: url("../img/tick-tablet.png");
+        }
+
+
+
+        &__option {
+            padding: 17px 0 13px 17px;
+
+            flex-grow: 1;
+
+            min-width: 375px;
+
+            font-size: 19px;
+            line-height: 19px;
+
+
+            &--phone {
+                width: 500px;
+                background-position: 95% 49%;
+            }
+
+            &--email {
+                width: 500px;
+                background-position: 95% 57%;
+
+            }
+
+            &--textarea {
+                padding-left: 15px;
+            }
+
+        }
+
+        &__info-wrapper {
+
+            background-color: yellow;
+            width: 668px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__info {
+            box-sizing: border-box;
+
+            padding-top: 8px;
+
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 0;
+            order: 1;
+        }
     }
 }
