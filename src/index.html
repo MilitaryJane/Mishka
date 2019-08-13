@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
 </head>
 
 <body class="page">
     <header class="page-header">
         <div class="container">
-            <nav class="main-nav">
-
+            <nav class="main-nav main-nav--no-js">
                 <div class="main-nav__wrapper">
                     <a class="main-nav__logo logo">
                         <picture>
@@ -27,8 +24,8 @@
                     <button class="main-nav__toggle toggle" type="button"><span class="toggle__burger "><span
                                 class="visually-hidden">Открыть
                                 меню</span></span></button>
-                </div>
 
+                </div>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
                         <a class="site-list__item-link site-list__item-link--catalog" href="catalog.html">Каталог
@@ -280,10 +277,13 @@
 
             "use strict";
 
+            var mainNav = document.querySelector(".main-nav");
             var toggle = document.querySelector(".toggle");
             var toggleBurger = document.querySelector(".toggle__burger");
             var modalSiteMenu = document.querySelector(".site-list");
             var modalUserMenu = document.querySelector(".user-list");
+
+            mainNav.classList.remove("main-nav--no-js");
 
             toggle.addEventListener("click", function (evt) {
                 evt.preventDefault();

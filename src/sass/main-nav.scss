@@ -26,12 +26,22 @@
         margin-top: 29px;
     }
 
-
     &__text {
         font-size: 15px;
         line-height: 24px;
         font-weight: 400;
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-nav--no-js .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav--no-js .site-list,
+    .main-nav--no-js .user-list {
+        display: block;
     }
 }
 
