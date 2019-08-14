@@ -16,7 +16,7 @@
                 <div class="main-nav__wrapper">
                     <a class="main-nav__logo logo" href="index.html">
                         <picture>
-                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png">
+                            <source media="(min-width: 1250px)" srcset="img/mishka-logo-desktop.png">
                             <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
                             <img class="logo__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35"
                                 alt="Логотип Mishki">
@@ -69,8 +69,16 @@
                     <h2 class="visually-hidden">Каталог</h2>
                     <ul class="catalog__list">
                         <li class="catalog__item" tabindex="0">
-                            <img class="catalog__item-image" src="img/photo-1-mobile.jpg" width="260" height="195"
-                                alt="Вязаный зайчик">
+                            <div class="catalog__image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1250px)"
+                                        srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
+                                    <img class="catalog__item-image" src="img/photo-1-mobile.jpg"
+                                        srcset="img/photo-1-mobile@2x.jpg 2x" alt="Вязаный зайчик">
+                                </picture>
+                            </div>
                             <div class="catalog__item-wrapper">
                                 <div class="catalog__name-wrapper">
                                     <h3 class="catalog__name">
@@ -88,8 +96,16 @@
                             </div>
                         </li>
                         <li class="catalog__item">
-                            <img class="catalog__item-image" src="img/photo-2-mobile.jpg" width="260" height="195"
-                                alt="Корзинка для белья">
+                            <div class="catalog__image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1250px)"
+                                        srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
+                                    <img class="catalog__item-image" src="img/photo-2-mobile.jpg"
+                                        srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                                </picture>
+                            </div>
                             <div class="catalog__item-wrapper">
                                 <div class="catalog__name-wrapper">
                                     <h3 class="catalog__name">
@@ -106,8 +122,16 @@
                             </div>
                         </li>
                         <li class="catalog__item" tabindex="0">
-                            <img class="catalog__item-image" src="img/photo-3-mobile.jpg" width="260" height="195" alt="Большая корзинка
-                        для игрушек">
+                            <div class="catalog__image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1250px)"
+                                        srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
+                                    <img class="catalog__item-image" src="img/photo-3-mobile.jpg"
+                                        srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+                                </picture>
+                            </div>
                             <div class="catalog__item-wrapper">
                                 <div class="catalog__name-wrapper">
                                     <h3 class="catalog__name">
@@ -129,8 +153,8 @@
                 <section class="video">
                     <h2 class="video__title">Процесс производства</h2>
                     <div class="video__content-wrapper">
-                        <video class="video__content" width="260" height="150" poster="img/video-mobile.jpg">
-                            <source src="#">
+                        <video class="video__content" poster="img/video-mobile.jpg" preload="none">
+                            <source src="#" type=''>
                         </video>
                         <button class="video__play-button"><span class="visually-hidden">Воспроизвести</span></button>
                     </div>

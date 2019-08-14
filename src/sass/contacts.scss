@@ -166,7 +166,7 @@
         flex-wrap: wrap;
         width: 1050px;
         height: 457px;
-        padding: 71px 0 57px 175px;
+        padding: 71px 0 57px 0;
         margin-bottom: 50px;
 
         &::before {
@@ -177,6 +177,8 @@
         &__wrapper {
             width: 350px;
             padding-top: 70px;
+            padding-left: 175px;
+
         }
 
         &__title {
@@ -216,6 +218,10 @@
         &__map::after {
             top: 144px;
             left: 150px;
+        }
+
+        &__button {
+            margin-left: 175px;
         }
     }
 }

@@ -15,9 +15,9 @@
                 <div class="main-nav__wrapper">
                     <a class="main-nav__logo logo">
                         <picture>
-                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png">
-                            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
-                            <img class="logo__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35"
+                            <source media="(min-width: 1250px)" srcset="img/mishka-logo-desktop.svg">
+                            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                            <img class="logo__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
                                 alt="Логотип Mishki">
                         </picture>
                     </a>
@@ -110,11 +110,16 @@
                                 </li>
                             </ul>
                         </div>
-
-
-                        <img class="week-product__image" src="img/triple-set-mobile.jpg" width="260" height="315"
-                            alt="Вязаные корзинки">
-
+                        <div class="week-product__image-wrapper">
+                            <picture>
+                                <source media="(min-width: 1250px)"
+                                    srcset="img/triple-set-desktop.jpg, img/triple-set-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="img/triple-set-tablet.jpg, img/triple-set-tablet@2x.jpg 2x">
+                                <img class="week-product__image" src="img/triple-set-mobile.jpg"
+                                    srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+                            </picture>
+                        </div>
                         <div class="week-product__price-wrapper">
                             <p class="week-product__price">Цена: <span class="week-product__price-value">990 руб.</span>
                             </p>
@@ -191,8 +196,12 @@
                     </ul>
                 </div>
                 <div class="contacts__map">
-                    <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Офис компании по адресу г. Санкт-Петербург,
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+                        <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании по адресу г. Санкт-Петербург,
                 ул. Большая Конюшенная, д. 19/8, офис 101">
+                    </picture>
                 </div>
                 <div class="contacts__button-wrapper">
                     <button class="button contacts__button button--contacts" type="button">Напишите нам</button>
