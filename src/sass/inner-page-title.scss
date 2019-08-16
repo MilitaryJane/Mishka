@@ -33,8 +33,9 @@
             left: 0px;
             bottom: 0;
 
-            background-image: url("../img/zigzag-fill-tablet.png");
+            background-image: url("../img/zigzag-fill-tablet.svg");
             background-position: center 0;
+            background-size: 768px 23px;
         }
 
     }
@@ -54,8 +55,8 @@
             height: 33px;
             left: 0;
 
-            background-image: url("../img/zigzag-fill-desktop.png");
-            background-position: 0 0;
+            background-size: 1250px 33px;
+
         }
     }
 }

@@ -1,12 +1,11 @@
 @import "_style-lib.scss";
 
 .logo-footer {
-    width: 102px;
-    height: 34px;
+    fill: #231f20;
 
     &:focus,
     &:hover {
-        opacity: 0.6;
+        fill: #46c1ae;
     }
 
     &:active {

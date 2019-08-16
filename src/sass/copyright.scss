@@ -1,18 +1,25 @@
 @import "_style-lib.scss";
 
 .copyright {
-    display: block;
-
-    &__wrapper {
+    &__link {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-
+        width: 182px;
         padding: 0;
-        margin: 0 auto;
 
-        width: 183px;
+        fill: #63d1bb;
+
+        &:hover,
+        &:focus {
+            fill: #46c1ae;
+        }
+
+        &:active {
+            fill: #46c1ae;
+            opacity: 0.3;
+        }
     }
+
 
     &__text {
         display: block;
@@ -22,27 +29,14 @@
         font-size: 18px;
         line-height: 20px;
         font-weight: 700;
+
+        color: $base-text-color;
     }
 
-    &__link {
+    &__image {
         display: block;
-
         width: 27px;
         height: 34px;
-
-        background-image: url("../img/htmlacademy.png");
-        background-position: 0 0;
-        background-repeat: no-repeat;
-
-        &:focus,
-        &:hover {
-            background-image: url("../img/htmlacademy-focus.png");
-        }
-
-        &:active {
-            background-image: url("../img/htmlacademy-focus.png");
-            opacity: 0.3;
-        }
     }
 
 }

@@ -9,6 +9,14 @@
     margin: 0;
     border: $catalog-border;
 
+    &:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
     &__title {
         position: relative;
         display: block;
@@ -24,15 +32,17 @@
         &::before {
             @include pseudo-element;
             width: 32px;
-            height: 22px;
+            height: 32px;
 
             top: 34px;
             left: 33px;
 
-            background-image: url("../img/video.png");
+            background-image: url("../img/video.svg");
             background-position: 0 0;
             background-repeat: no-repeat;
+            background-size: 32px 32px;
         }
+
     }
 
     &__content-wrapper {
@@ -48,6 +58,8 @@
         display: block;
         width: 260px;
         height: 150px;
+        object-fit: cover;
+
     }
 
     &__play-button {
@@ -65,17 +77,19 @@
         margin-top: -46px;
         border: none;
 
-        background-image: url("../img/play.png");
+        background-image: url("../img/play.svg");
         background-position: 50% 50%;
         background-repeat: no-repeat;
+        background-size: 101px 77px;
 
         &:focus,
         &:hover {
-            background-image: url("../img/play-focus.png");
+            background-size: 121px 92px;
         }
 
         &:active {
-            background-image: url("../img/play-active.png");
+            background-size: 81px 62px;
+            opacity: 0.3;
         }
     }
 

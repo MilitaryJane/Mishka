@@ -3,7 +3,6 @@
 .user-list {
     display: none;
     flex-wrap: wrap;
-    box-sizing: border-box;
 
     width: 320px;
     margin: 0;
@@ -24,13 +23,11 @@
 
     &__search,
     &__basket {
-        position: relative;
-        display: block;
+        display: flex;
         box-sizing: border-box;
         width: 320px;
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 77px;
 
         font-size: 17px;
         line-height: 24px;
@@ -41,60 +38,43 @@
         &:focus,
         &:hover {
             color: $link-focus-color;
+
+            .user-list__search-icon,
+            .user-list__cart-icon {
+                fill: #63d1bb;
+            }
         }
 
         &:active {
             color: $link-active-color;
+
+            .user-list__search-icon,
+            .user-list__cart-icon {
+                fill: #63d1bb;
+                opacity: 0.3;
+            }
         }
     }
 
+    &__search-icon,
+    &__cart-icon {
+        box-sizing: border-box;
+        width: 77px;
+        padding-left: 32px;
 
-
-    &__search::before {
-        @include pseudo-element;
-        top: 32px;
-        left: 32px;
-
-        width: 18px;
-        height: 18px;
-
-        background-image: url("../img/search.png");
-        background-position: 0 0;
-        background-repeat: no-repeat;
+        fill: #d3d2d2;
     }
 
-    &__basket::before {
-        @include pseudo-element;
-        top: 31px;
-        left: 30px;
-
-        width: 21px;
-        height: 18px;
-
-        background-image: url("../img/cart.png");
-        background-position: 0 0;
-        background-repeat: no-repeat;
+    &__search-icon {
+        padding-left: 32px;
+        padding-right: 26px;
     }
 
-    &__search:hover::before,
-    &__search:focus::before {
-        background-image: url("../img/search-focus.png");
+    &__cart-icon {
+        padding-left: 30px;
+        padding-right: 25px;
     }
 
-    &__basket:hover::before,
-    &__basket:focus::before {
-        background-image: url("../img/cart-focus.png");
-    }
-
-    &__search:active::before {
-        background-image: url("../img/search-focus.png");
-        opacity: 0.3;
-    }
-
-    &__basket:active::before {
-        background-image: url("../img/cart-focus.png");
-        opacity: 0.3;
-    }
 }
 
 .user-list--open {
@@ -116,25 +96,34 @@
 
         }
 
-
         &__search {
-            width: 81px;
-            padding-top: 44px;
-            padding-bottom: 44px;
-            padding-left: 0;
-
-
+            width: 83px;
+            padding-top: 36px;
         }
 
         &__search-text {
             display: none;
         }
 
-        &__basket {
-            width: 265px;
-
-            padding-left: 82px;
+        &__search-icon {
+            width: 83px;
+            padding-left: 33px;
+            padding-right: 21px;
         }
+
+        &__basket {
+            width: 263px;
+            padding-top: 36px;
+        }
+
+        &__cart-icon {
+            width: 83px;
+            padding-left: 31px;
+            padding-right: 31px;
+        }
+
+
+
     }
 }
 

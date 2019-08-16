@@ -92,11 +92,12 @@
         width: 67px;
         height: 100px;
         top: 145px;
-        left: 138px;
+        left: 139px;
 
-        background-image: url("../img/map-pin.png");
+        background-image: url("../img/map-pin.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
+        background-size: 67px 100px;
     }
 }
 
@@ -114,9 +115,10 @@
             width: 47px;
             height: 81px;
 
-            background-image: url("../img/flag.png");
+            background-image: url("../img/flag.svg");
             background-position: 0 0;
             background-repeat: no-repeat;
+            background-size: 47px 81px;
         }
 
         &__title {
@@ -155,8 +157,8 @@
         }
 
         &__map::after {
-            top: 140px;
-            left: 364px;
+            top: 139px;
+            left: 363px;
         }
     }
 }
@@ -216,8 +218,8 @@
         }
 
         &__map::after {
-            top: 144px;
-            left: 150px;
+            top: 146px;
+            left: 239px;
         }
 
         &__button {
