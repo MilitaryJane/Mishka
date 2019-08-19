@@ -42,7 +42,8 @@
             height: 37px;
             left: 8px;
 
-            background-image: url("../img/icon-1.png");
+            background-image: url("../img/icon-1.svg");
+            background-size: 32px 37px;
         }
 
         &--Scandinavian-style::before {
@@ -51,7 +52,8 @@
             top: 2px;
             left: 0;
 
-            background-image: url("../img/icon-2.png");
+            background-image: url("../img/icon-3.svg");
+            background-size: 47px 27px;
         }
 
         &--more-likes::before {
@@ -60,8 +62,8 @@
             top: 6px;
             left: 7px;
 
-
-            background-image: url("../img/icon-3.png");
+            background-image: url("../img/icon-5.svg");
+            background-size: 34px 27px;
         }
 
         &--made-with-love::before {
@@ -70,7 +72,8 @@
             top: 3px;
             left: 3px;
 
-            background-image: url("../img/icon-4.png");
+            background-image: url("../img/icon-2.svg");
+            background-size: 35px 34px;
         }
 
         &--domestic-manufacturer::before {
@@ -79,7 +82,8 @@
             top: 5px;
             left: -6px;
 
-            background-image: url("../img/icon-5.png");
+            background-image: url("../img/icon-4.svg");
+            background-size: 55px 23px;
         }
 
         &--gift-wrap::before {
@@ -88,7 +92,8 @@
             top: 2px;
             left: 3px;
 
-            background-image: url("../img/icon-6.png");
+            background-image: url("../img/icon-6.svg");
+            background-size: 33px 32px;
         }
     }
 }

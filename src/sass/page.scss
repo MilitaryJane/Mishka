@@ -1,21 +1,24 @@
 @import "_style-lib.scss";
+@import "_fonts.scss";
 
 .page {
     width: 320px;
     margin: 0 auto;
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    line-height: $base-line-height;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
     font-weight: 400;
-    color: $base-font-color;
+    color: $base-text-color;
 
     background-color: $base-bg-color;
 
-    background-image: url("../img/mishka-index-mobile.jpg");
+    // background-image: url("../img/mishka-index-mobile.jpg");
+    // background-image: url("../img/mishka-catalog-mobile.jpg");
+    // background-image: url("../img/mishka-form-mobile.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    // opacity: 0.6;
 }
 
 a {
@@ -24,17 +27,20 @@ a {
 
 @media (min-width: 768px) {
     .page {
-        background-image: url("../img/mishka-index-tablet.jpg");
+        // background-image: url("../img/mishka-index-tablet.jpg");
+        // background-image: url("../img/mishka-catalog-tablet.jpg");
+        // background-image: url("../img/mishka-form-tablet.jpg");
 
         width: 768px;
-
     }
 }
 
 
 @media (min-width: 1250px) {
     .page {
-        background-image: url("../img/mishka-index-desktop.jpg");
+        // background-image: url("../img/mishka-index-desktop.jpg");
+        // background-image: url("../img/mishka-catalog-desktop.jpg");
+        // background-image: url("../img/mishka-form-desktop.jpg");
 
         width: 1250px;
     }

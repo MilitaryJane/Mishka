@@ -167,9 +167,10 @@
         width: 22px;
         height: 16px;
 
-        background-image: url("../img/tick-mobile.png");
+        background-image: url("../img/tick.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
+        background-size: 22px 16px;
     }
 
 
@@ -397,7 +398,7 @@
             width: 33px;
             height: 22px;
 
-            background-image: url("../img/tick-tablet.png");
+            background-size: 33px 22px;
         }
 
 

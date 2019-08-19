@@ -1,3 +1,6 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // Text colors
 $base-text-color: #000000;
 $companion1-text-color: #444444;
@@ -132,8 +135,8 @@ $check-radio-active-border:2px solid #c7c7c7;
 $radio-pin-color: #62d1ba;
 $check-pin-color: #231f20;
 
-$input-border: 1px solid #000000;
-$input-border-focus: 1px solid #62d1ba;
+$input-border: 2px solid #000000;
+$input-border-focus: 2px solid #62d1ba;
 $input-text-color: #444444;
 $input-placeholder-color: #c7c7c7;
 
