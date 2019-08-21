@@ -23,6 +23,7 @@
     "gulp-cache": "^1.1.3",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -30,8 +31,5 @@
     "gulp-uglifyjs": "^0.6.2",
     "gulp-webp": "^4.0.1"
   },
-  "dependencies": {
-    "gulp-imagemin": "^6.1.0",
-    "save-dev": "^2.0.0"
-  }
+  "dependencies": {}
 }
