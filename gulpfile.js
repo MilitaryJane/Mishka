@@ -47,7 +47,7 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('src/img/**/*.{jpg,jpeg,png}')
+    return gulp.src(['src/img/**/*.{jpg,jpeg,png,svg}', '!src/img/sprite.svg', '!src/img/substrates/*.jpg'])
         .pipe(imagemin([
             imagemin.optipng({
                 optimizationLevel: 3
@@ -115,9 +115,9 @@ gulp.task('clean', function () {
 });
 
 
-gulp.task('clear', function () {
-    return cache.clearAll();
-})
+// gulp.task('clear', function () {
+//     return cache.clearAll();
+// })
 
 
 gulp.task('prebuild', async function () {
