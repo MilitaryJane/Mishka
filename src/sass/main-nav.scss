@@ -9,11 +9,13 @@
 
     box-sizing: border-box;
 
+
     &__wrapper {
         width: 260px;
         display: flex;
         justify-content: space-between;
         margin: 0;
+
     }
 
     &__logo {
@@ -53,7 +55,6 @@
 
         &__wrapper {
             width: 320px;
-
         }
 
         &__logo {
@@ -85,7 +86,7 @@
         }
 
         &__logo {
-            margin: 9px 101px 7px 75px;
+            margin: 9px 0px 7px 69px;
         }
     }
 }

@@ -10,7 +10,7 @@
         display: block;
         padding: 0;
         margin: 0;
-        margin-bottom: 27px;
+        margin-bottom: 26px;
         text-align: left;
 
         font-size: 18px;
@@ -47,8 +47,10 @@
     }
 
     &__value {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
+        padding-left: 2px;
         padding-bottom: 30px;
         width: 185px;
         vertical-align: top;
@@ -150,6 +152,10 @@
             width: 259px;
         }
 
+        &__email::after {
+            top: 26px;
+        }
+
         &__map {
             width: 768px;
             margin-left: -50px;
@@ -207,6 +213,10 @@
 
         &__value {
             width: 273px;
+        }
+
+        &__email::after {
+            top: 25px;
         }
 
 

@@ -25,6 +25,18 @@
 
     &__icon {
         fill: #221f1f;
+
+        &--in {
+            padding-top: 5px;
+        }
+
+        &--fb {
+            padding-left: 2px;
+        }
+
+        &--tw {
+            padding-top: 5px;
+        }
     }
 
     &__icon:hover,

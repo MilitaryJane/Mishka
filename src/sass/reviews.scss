@@ -14,7 +14,7 @@
         bottom: 0;
 
         background-image: url("../img/zigzag-line-mobile.svg");
-        background-position: 0 0;
+        background-position: 8px 1px;
         background-repeat: no-repeat;
         background-size: 320px 6px;
     }
@@ -36,7 +36,7 @@
     &__text {
         width: 260px;
         margin: 0;
-        margin-bottom: 26px;
+        margin-bottom: 27px;
         padding: 0;
 
         text-align: left;
@@ -65,7 +65,7 @@
         width: 130px;
         margin: 0;
         margin-top: 4px;
-        margin-bottom: 27px;
+        margin-bottom: 28px;
         padding: 0;
 
         text-align: left;
@@ -184,7 +184,7 @@
             height: 15px;
             left: 0;
 
-            background-image: url("../img/zigzag-line-mobile.svg");
+            background-position: 20px 1px;
             background-size: 768px 15px;
         }
 
@@ -287,7 +287,7 @@
             width: 1050px;
             height: 23px;
 
-            background-image: url("../img/zigzag-line-mobile.svg");
+            background-position: 25px -1px;
             background-size: 1050px 23px;
         }
 

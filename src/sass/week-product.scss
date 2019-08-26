@@ -20,7 +20,7 @@
         bottom: 0;
 
         background-image: url("../img/zigzag-line-mobile.svg");
-        background-position: 0 0;
+        background-position: 8px 1px;
         background-repeat: no-repeat;
         background-size: 320px 6px;
     }
@@ -132,6 +132,7 @@
             height: 15px;
             left: -50px;
 
+            background-position: 20px 1px;
             background-size: 768px 15px;
         }
 
@@ -218,6 +219,7 @@
             height: 23px;
             left: 0px;
 
+            background-position: 25px -2px;
             background-size: 1050px 23px;
         }
 
