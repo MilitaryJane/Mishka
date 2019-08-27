@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link href="fonts/OpenSans-Regular-webfont.woff2" rel="preload" as="font">
+    <link href="fonts/OpenSans-Bold-webfont.woff2" rel="preload" as="font">
     <link href="css/styles.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
@@ -79,15 +81,15 @@
                             <div class="catalog__image-wrapper">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 1250px)"
-                                        srcset="img/content/photo-1-desktop.webp, img/photo-1-desktop@2x.webp 2x">
+                                        srcset="img/content/photo-1-desktop.webp, img/content/photo-1-desktop@2x.webp 2x">
                                     <source type="image/webp" media="(min-width: 768px)"
-                                        srcset="img/content/photo-1-tablet.webp, img/photo-1-tablet@2x.webp 2x">
+                                        srcset="img/content/photo-1-tablet.webp, img/content/photo-1-tablet@2x.webp 2x">
                                     <source type="image/webp"
-                                        srcset="img/content/photo-1-mobile.webp, img/photo-1-mobile@2x.webp 2x">
+                                        srcset="img/content/photo-1-mobile.webp, img/content/photo-1-mobile@2x.webp 2x">
                                     <source media="(min-width: 1250px)"
-                                        srcset="img/content/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
+                                        srcset="img/content/photo-1-desktop.jpg, img/content/photo-1-desktop@2x.jpg 2x">
                                     <source media="(min-width: 768px)"
-                                        srcset="img/content/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg 2x">
+                                        srcset="img/content/photo-1-tablet.jpg, img/content/photo-1-tablet@2x.jpg 2x">
                                     <img class="catalog__item-image" src="img/content/photo-1-mobile.jpg"
                                         srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Вязаный зайчик">
                                 </picture>
@@ -102,7 +104,7 @@
 
                                 <div class="catalog__buy-wrapper">
                                     <b class="catalog__item-price">1 200 руб.</b>
-                                    <a class="catalog__button-buy" href="#">
+                                    <a class="catalog__button-buy buy-button" href="#">
                                         <span class="visually-hidden">Купить</span>
                                         <svg class="catalog__buy-icon" width="21" height="18">
                                             <use xlink:href="img/sprite.svg#sprite-cart"></use>
@@ -115,15 +117,15 @@
                             <div class="catalog__image-wrapper">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 1250px)"
-                                        srcset="img/content/photo-2-desktop.webp, img/photo-2-desktop@2x.webp 2x">
+                                        srcset="img/content/photo-2-desktop.webp, img/content/photo-2-desktop@2x.webp 2x">
                                     <source type="image/webp" media="(min-width: 768px)"
-                                        srcset="img/content/photo-2-tablet.webp, img/photo-2-tablet@2x.webp 2x">
+                                        srcset="img/content/photo-2-tablet.webp, img/content/photo-2-tablet@2x.webp 2x">
                                     <source type="image/webp"
-                                        srcset="img/content/photo-2-mobile.webp, img/photo-2-mobile@2x.webp 2x">
+                                        srcset="img/content/photo-2-mobile.webp, img/content/photo-2-mobile@2x.webp 2x">
                                     <source media="(min-width: 1250px)"
-                                        srcset="img/content/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
+                                        srcset="img/content/photo-2-desktop.jpg, img/content/photo-2-desktop@2x.jpg 2x">
                                     <source media="(min-width: 768px)"
-                                        srcset="img/content/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg 2x">
+                                        srcset="img/content/photo-2-tablet.jpg, img/content/photo-2-tablet@2x.jpg 2x">
                                     <img class="catalog__item-image" src="img/content/photo-2-mobile.jpg"
                                         srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
                                 </picture>
@@ -137,7 +139,7 @@
                                 </div>
                                 <div class="catalog__buy-wrapper">
                                     <b class="catalog__item-price">690 руб.</b>
-                                    <button class="catalog__button-buy">
+                                    <button class="catalog__button-buy buy-button">
                                         <span class="visually-hidden">Купить</span>
                                         <svg class="catalog__buy-icon" width="21" height="18">
                                             <use xlink:href="img/sprite.svg#sprite-cart"></use>
@@ -150,15 +152,15 @@
                             <div class="catalog__image-wrapper">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 1250px)"
-                                        srcset="img/content/photo-3-desktop.webp, img/photo-3-desktop@2x.webp 2x">
+                                        srcset="img/content/photo-3-desktop.webp, img/content/photo-3-desktop@2x.webp 2x">
                                     <source type="image/webp" media="(min-width: 768px)"
-                                        srcset="img/content/photo-3-tablet.webp, img/photo-3-tablet@2x.webp 2x">
+                                        srcset="img/content/photo-3-tablet.webp, img/content/photo-3-tablet@2x.webp 2x">
                                     <source type="image/webp" src=""
-                                        srcset="img/content/photo-3-mobile.webp, img/photo-3-mobile@2x.webp 2x">
+                                        srcset="img/content/photo-3-mobile.webp, img/content/photo-3-mobile@2x.webp 2x">
                                     <source media="(min-width: 1250px)"
-                                        srcset="img/content/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
+                                        srcset="img/content/photo-3-desktop.jpg, img/content/photo-3-desktop@2x.jpg 2x">
                                     <source media="(min-width: 768px)"
-                                        srcset="img/content/photo-3-tablet.jpg, img/photo-3-tablet@2x.jpg 2x">
+                                        srcset="img/content/photo-3-tablet.jpg, img/content/photo-3-tablet@2x.jpg 2x">
                                     <img class="catalog__item-image" src="img/content/photo-3-mobile.jpg"
                                         srcset="img/content/photo-3-mobile@2x.jpg 2x"
                                         alt="Большая корзинка для игрушек">
@@ -174,7 +176,7 @@
                                 </div>
                                 <div class="catalog__buy-wrapper">
                                     <b class="catalog__item-price">1 500 руб.</b>
-                                    <button class="catalog__button-buy">
+                                    <button class="catalog__button-buy buy-button">
                                         <span class="visually-hidden">Купить</span>
                                         <svg class="catalog__buy-icon" width="21" height="18">
                                             <use xlink:href="img/sprite.svg#sprite-cart"></use>
@@ -196,7 +198,7 @@
                     <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
                         как появляются наши товары.</p>
 
-                    <a class="button button--order-link video__order-link" href="#">Сделать заказ</a>
+                    <a class="button button--order-link video__order-link" href="form.html">Сделать заказ</a>
                 </section>
             </div>
         </div>
@@ -285,41 +287,7 @@
             </div>
         </div>
     </section>
-    <div class="overlay"></div>
-
-    <script>
-        (function () {
-
-            "use strict";
-
-            var mainNav = document.querySelector(".main-nav");
-            var toggle = document.querySelector(".toggle");
-            var toggleBurger = document.querySelector(".toggle__burger");
-            var modalSiteMenu = document.querySelector(".site-list");
-            var modalUserMenu = document.querySelector(".user-list");
-
-            mainNav.classList.remove("main-nav--no-js");
-
-            toggle.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                (toggleBurger.classList.contains("toggle__burger--open") === true) ? toggleBurger.classList
-                    .remove(
-                        "toggle__burger--open"): toggleBurger.classList.add("toggle__burger--open");
-
-                (modalSiteMenu.classList.contains("site-list--open") === true) ? modalSiteMenu
-                    .classList
-                    .remove(
-                        "site-list--open"): modalSiteMenu.classList.add("site-list--open");
-
-                (modalUserMenu.classList.contains("user-list--open") === true) ? modalUserMenu
-                    .classList
-                    .remove(
-                        "user-list--open"): modalUserMenu.classList.add("user-list--open");
-
-            });
-
-        })();
-    </script>
+    <div class="modal-overlay"></div>
 
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/svg4everybody.legacy.min.js"></script>
@@ -327,6 +295,8 @@
         svg4everybody()
     </script>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

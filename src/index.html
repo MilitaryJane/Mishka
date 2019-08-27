@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link href="fonts/OpenSans-Regular-webfont.woff2" rel="preload" as="font">
+    <link href="fonts/OpenSans-Bold-webfont.woff2" rel="preload" as="font">
     <link href="css/styles.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
@@ -137,7 +139,7 @@
                         <div class="week-product__price-wrapper">
                             <p class="week-product__price">Цена: <span class="week-product__price-value">990 руб.</span>
                             </p>
-                            <button class="button week-product__buy-button" type="button">Заказать</button>
+                            <button class="button week-product__buy-button buy-button" type="button">Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -282,13 +284,13 @@
         <div class="container">
             <div class="modal-add-basket__wrapper">
                 <h2 class="modal-add-basket__title">Добавить в&nbsp;корзину</h2>
-                <form class="modal-add-basket__form">
+                <form class="modal-add-basket__form" action="#" method="GET">
                     <fieldset class="modal-add-basket__form-field">
                         <legend class="modal-add-basket__text">Выберите размер:</legend>
                         <ul class="modal-add-basket__list">
                             <li class="modal-add-basket__item">
                                 <input class="visually-hidden modal-add-basket__input modal-add-basket__input--small"
-                                    type="checkbox" id="small" name="small" value="small" checked>
+                                    type="checkbox" id="small" name="small" value="small">
                                 <label class="modal-add-basket__size-select size-select" for="small"
                                     tabindex="0">S</label>
                             </li>
@@ -312,12 +314,8 @@
             </div>
         </div>
     </section>
-    <div class="overlay"></div>
+    <div class="modal-overlay"></div>
 
-
-    <script>
-
-    </script>
 
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/svg4everybody.legacy.min.js"></script>
@@ -325,7 +323,7 @@
         svg4everybody()
     </script>
     <script src="js/picturefill.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 
 
 </body>

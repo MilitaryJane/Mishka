@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link href="fonts/OpenSans-Regular-webfont.woff2" rel="preload" as="font">
+    <link href="fonts/OpenSans-Bold-webfont.woff2" rel="preload" as="font">
     <link href="css/styles.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
@@ -271,80 +273,14 @@
         </div>
     </footer>
 
-    <section class="modal modal-add-basket">
-        <div class="container">
-            <div class="modal-add-basket__wrapper">
-                <h2 class="modal-add-basket__title">Добавить в&nbsp;корзину</h2>
-                <form class="modal-add-basket__form">
-                    <fieldset class="modal-add-basket__form-field">
-                        <legend class="modal-add-basket__text">Выберите размер:</legend>
-                        <ul class="modal-add-basket__list">
-                            <li class="modal-add-basket__item">
-                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--small"
-                                    type="checkbox" id="small" name="small" value="small" checked>
-                                <label class="modal-add-basket__size-select size-select" for="small"
-                                    tabindex="0">S</label>
-                            </li>
-                            <li class="modal-add-basket__item">
-                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--middle"
-                                    type="checkbox" id="middle" name="middle" value="middle">
-                                <label class="modal-add-basket__size-select size-select" for="middle"
-                                    tabindex="0">M</label>
-                            </li>
-                            <li class="modal-add-basket__item">
-                                <input class="visually-hidden modal-add-basket__input modal-add-basket__input--large"
-                                    type="checkbox" id="large" name="large" value="large">
-                                <label class="modal-add-basket__size-select size-select" for="large"
-                                    tabindex="0">L</label>
-                            </li>
-                        </ul>
-                        <button class="modal-add-basket__button button button--add-basket"
-                            type="button">Добавить</button>
-                    </fieldset>
-                </form>
-            </div>
-    </section>
-
-    <script>
-        (function () {
-
-            "use strict";
-
-            var mainNav = document.querySelector(".main-nav");
-            var toggle = document.querySelector(".toggle");
-            var toggleBurger = document.querySelector(".toggle__burger");
-            var modalSiteMenu = document.querySelector(".site-list");
-            var modalUserMenu = document.querySelector(".user-list");
-
-            mainNav.classList.remove("main-nav--no-js");
-
-            toggle.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                (toggleBurger.classList.contains("toggle__burger--open") === true) ? toggleBurger.classList
-                    .remove(
-                        "toggle__burger--open"): toggleBurger.classList.add("toggle__burger--open");
-
-                (modalSiteMenu.classList.contains("site-list--open") === true) ? modalSiteMenu
-                    .classList
-                    .remove(
-                        "site-list--open"): modalSiteMenu.classList.add("site-list--open");
-
-                (modalUserMenu.classList.contains("user-list--open") === true) ? modalUserMenu
-                    .classList
-                    .remove(
-                        "user-list--open"): modalUserMenu.classList.add("user-list--open");
-
-            });
-
-        })();
-    </script>
-
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/svg4everybody.legacy.min.js"></script>
     <script>
         svg4everybody()
     </script>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/main.min.js"></script>
+
 </body>
 
 </html>
