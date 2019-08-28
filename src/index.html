@@ -211,18 +211,24 @@
                         </li>
                     </ul>
                 </div>
+
+
                 <div class="contacts__map">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1250px)"
-                            srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)"
-                            srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
-                        <source media="(min-width: 1250px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
-                        <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании по адресу г. Санкт-Петербург,
+                    <div class="contacts__map-api" id="map"></div>
+                    <div class="contacts__map-image">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1250px)"
+                                srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
+                            <source media="(min-width: 1250px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+                            <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                                alt="Офис компании по адресу г. Санкт-Петербург,
                 ул. Большая Конюшенная, д. 19/8, офис 101">
-                    </picture>
+                        </picture>
+                    </div>
                 </div>
                 <div class="contacts__button-wrapper">
                     <button class="button contacts__button button--contacts" type="button">Напишите нам</button>
@@ -324,6 +330,9 @@
     </script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARsFX6-05mm3HONx8hbrtkml-sSG8edMg&callback=initMap">
+    </script>
 
 
 </body>
