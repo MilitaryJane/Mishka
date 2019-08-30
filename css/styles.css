@@ -1866,13 +1866,13 @@ img {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("/fonts/OpenSans-Bold-webfont.woff") format("woff");
+  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
 
@@ -2890,12 +2890,12 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("/fonts/OpenSans-Bold-webfont.woff") format("woff");
+  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
