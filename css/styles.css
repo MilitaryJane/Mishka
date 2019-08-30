@@ -1866,7 +1866,7 @@ img {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
@@ -2890,7 +2890,7 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
