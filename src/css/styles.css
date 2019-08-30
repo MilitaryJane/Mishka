@@ -1,4 +1,69 @@
 .about-us {
+  display: block;
+  padding: 28px 0 0 0;
+  margin: 0; }
+  .about-us__title {
+    margin-bottom: 30px; }
+  .about-us__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .about-us__item {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 0;
+    padding-top: 55px;
+    width: 260px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700; }
+    .about-us__item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      background-position: 0 0;
+      background-repeat: no-repeat; }
+    .about-us__item--eco-materials::before {
+      width: 32px;
+      height: 37px;
+      left: 8px;
+      background-image: url("../img/icon-1.png"); }
+    .about-us__item--Scandinavian-style::before {
+      width: 47px;
+      height: 27px;
+      top: 2px;
+      left: 0;
+      background-image: url("../img/icon-2.png"); }
+    .about-us__item--more-likes::before {
+      width: 34px;
+      height: 27px;
+      top: 6px;
+      left: 7px;
+      background-image: url("../img/icon-3.png"); }
+    .about-us__item--made-with-love::before {
+      width: 35px;
+      height: 34px;
+      top: 3px;
+      left: 3px;
+      background-image: url("../img/icon-4.png"); }
+    .about-us__item--domestic-manufacturer::before {
+      width: 55px;
+      height: 23px;
+      top: 5px;
+      left: -6px;
+      background-image: url("../img/icon-5.png"); }
+    .about-us__item--gift-wrap::before {
+      width: 33px;
+      height: 32px;
+      top: 2px;
+      left: 3px;
+      background-image: url("../img/icon-6.png"); }
+
+.about-us {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -410,6 +475,20 @@
       width: 525px; }
     .assortiment__item-link:hover, .assortiment__item-link:focus {
       padding-bottom: 54px; } }
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff; }
+
+a {
+  text-decoration: none; }
 
 .button {
   display: block;
@@ -1787,13 +1866,13 @@ img {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff");
+  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
 
@@ -2092,6 +2171,24 @@ a {
     .reviews__button {
       margin-bottom: 177px; } }
 
+.size-select {
+  display: block;
+  width: 78px;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #ececec; }
+  .size-select:hover, .size-select:focus {
+    border: 2px solid #c7c7c7; }
+  .size-select:active {
+    border: 2px solid #62d1ba; }
+  .size-select--active {
+    border: 2px solid #62d1ba; }
+
 .site-list {
   display: none;
   -webkit-flex-wrap: wrap;
@@ -2185,7 +2282,7 @@ a {
   line-height: 17px;
   font-weight: 700;
   text-align: center;
-  color: #62d1ba;
+  color: #444444;
   background-color: #ffffff;
   border: 2px solid #ececec; }
   .size-select:hover, .size-select:focus {
@@ -2793,12 +2890,12 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/openSans-regular-webfont.woff2") format("woff2"), url("../fonts/openSans-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff");
+  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
