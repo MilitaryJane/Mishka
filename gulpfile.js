@@ -13,6 +13,8 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglifyjs');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var ghPages = require('gh-pages');
+var path = require('path');
 
 
 
@@ -122,7 +124,8 @@ gulp.task('clean', function () {
 gulp.task('prebuild', async function () {
     var buildCss = gulp.src([
             'src/css/styles.css',
-            'src/css/styles.min.css'
+            'src/css/styles.min.css',
+            'src/css/Normalize.css'
         ])
         .pipe(gulp.dest('dist/css'));
 
@@ -144,3 +147,9 @@ gulp.task('prebuild', async function () {
 
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch', 'scripts-libs', 'images', 'webp', 'scripts'));
 gulp.task('build', gulp.series('clean', 'sass', 'scripts-libs', 'images', 'webp', 'scripts', 'prebuild'));
+
+
+function deploy(cb) {
+    ghPages.publish(path.join(process.cwd(), './dist'), cb);
+}
+exports.deploy = deploy;
