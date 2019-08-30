@@ -18,7 +18,7 @@
                 map: map,
                 draggable: true,
                 icon: {
-                    url: 'https://militaryjane.github.io/Mishka/img/map-pin.svg',
+                    url: './../img/map-pin.svg',
                     scaledSize: new google.maps.Size(67, 100)
                 }
             });
