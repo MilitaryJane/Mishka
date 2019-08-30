@@ -1872,7 +1872,7 @@ img {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
 
@@ -2896,6 +2896,6 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/openSans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-display: swap; }
