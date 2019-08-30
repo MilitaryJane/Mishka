@@ -125,7 +125,7 @@ gulp.task('prebuild', async function () {
     var buildCss = gulp.src([
             'src/css/styles.css',
             'src/css/styles.min.css',
-            'src/css/Normalize.css'
+            'src/css/normalize.css'
         ])
         .pipe(gulp.dest('dist/css'));
 
